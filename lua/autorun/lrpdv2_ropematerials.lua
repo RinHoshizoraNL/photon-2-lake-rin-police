@@ -1,0 +1,1 @@
+list.Add( "RopeMaterials", "cable/lrpd_policeline" )

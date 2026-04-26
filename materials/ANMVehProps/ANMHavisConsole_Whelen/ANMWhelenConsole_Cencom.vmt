@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_Cencom"
+	"$envmap" "ANMVehProps\ANMBrotherPocketJet633\ANMWhelenConsole_Cencom_s"
+}
+

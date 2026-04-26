@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMWestinEliteXD\ANMWestinEliteXD"
+	"$bumpmap" "ANMVehProps\ANMWestinEliteXD\ANMWestinEliteXD_n"
+	"$envmap" "ANMVehProps\ANMWestinEliteXD\ANMWestinEliteXD_s"
+	
+	$nocull 			"1"
+	$alphatest		1
+	$alphatestreference		0.5
+	$allowalphatocoverage	1
+}
+

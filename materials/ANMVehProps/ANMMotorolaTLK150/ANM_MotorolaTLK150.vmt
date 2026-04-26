@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "ANMVehProps/ANMMotorolaTLK150/ANM_MotorolaTLK150"
+	"$bumpmap" "ANMVehProps/ANMMotorolaTLK150/ANM_MotorolaTLK150_n"
+	"$envmap" "ANMVehProps/ANMMotorolaTLK150/ANM_MotorolaTLK150_s"
+
+   $phong "1"
+    $phongexponent "2"
+    $phongboost "1"
+    $phongfresnelranges "[.01 .05 .1]"
+	"$rimlightexponent"       "3"
+}

@@ -1,0 +1,9 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_Screws"
+	"$bumpmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_Screws_n"
+
+	"$translucent" "1"
+	"$nocull" "1"
+}
+

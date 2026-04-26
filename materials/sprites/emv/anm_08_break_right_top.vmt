@@ -1,0 +1,11 @@
+"UnlitGeneric"
+{
+	"$basetexture" "sprites/emv/anm_08_break_right_top"
+	"$nocull" 1
+	"$additive" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
+
+
+

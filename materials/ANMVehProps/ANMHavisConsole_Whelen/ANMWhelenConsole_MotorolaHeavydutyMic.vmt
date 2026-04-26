@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_MotorolaHeavydutyMic"
+	"$bumpmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_MotorolaHeavydutyMic_n"
+    "$envmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_MotorolaHeavydutyMic_s"
+}

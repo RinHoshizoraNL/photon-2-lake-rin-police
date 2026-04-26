@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "ANMVehProps/ANMAviWest/ANM_AVIWEST_LOGO"
+	
+	"$translucent" "1"
+	"$nocull" "1"
+}

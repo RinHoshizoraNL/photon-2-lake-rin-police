@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "ANMVehProps/ANMCargoStorageBox/ANM_CargoStorageBox"
+	"$bumpmap" "ANMVehProps/ANMCargoStorageBox/ANM_CargoStorageBox_n"
+	"$envmap" "ANMVehProps/ANMCargoStorageBox/ANM_CargoStorageBox_e"
+
+	$phong "1"
+	$phongexponent "2"
+	$phongboost "1"
+	$phongfresnelranges "[.01 .05 .1]"
+	$rimlightexponent       "3"
+}

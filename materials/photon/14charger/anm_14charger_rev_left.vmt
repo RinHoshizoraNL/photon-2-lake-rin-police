@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "photon/14charger/anm_14charger_rev_left"
+	"$nocull" 1
+	"$additive" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
+

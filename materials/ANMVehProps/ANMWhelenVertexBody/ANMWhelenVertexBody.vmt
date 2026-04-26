@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMWhelenVertexBody\ANMWhelenVertexBody"
+	"$bumpmap" "ANMVehProps\ANMWhelenVertexBody\ANMWhelenVertexBody_n"
+	"$envmap" "ANMVehProps\ANMWhelenVertexBody\ANMWhelenVertexBody_s"
+}
+

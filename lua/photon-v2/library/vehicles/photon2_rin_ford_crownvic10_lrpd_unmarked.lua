@@ -1,0 +1,476 @@
+if (Photon2.ReloadVehicleFile()) then return end --rin
+local VEHICLE = Photon2.LibraryVehicle()
+
+VEHICLE.Title 		= "2010 Ford Crown Victoria LRPD Unmarked"
+VEHICLE.Vehicle		= "cvpi_hd_sgm"
+VEHICLE.Category 	= "Photon 2: Lake Rin Police Dept."
+VEHICLE.Author		= "Rin Hoshizora"
+
+local sequence = Photon2.SequenceBuilder.New
+
+VEHICLE.Equipment = {
+    {
+		Category = "Paint",
+		Options = {
+            {
+				Option = "Deep Wedgewood Blue Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(1,12,32)
+				}
+			},
+			{
+				Option = "Norsea Blue Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(30,56,82)
+				}
+			},
+			{
+				Option = "Light Ice Blue Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(127, 150, 156)
+				}
+			},
+			{
+				Option = "Aspen Green Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(12, 32, 26)
+				}
+			},
+			{
+				Option = "Dark Toreador Red Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(58, 0, 0)
+				}
+			},
+            {
+				Option = "Dark Cherry Red Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(27, 0, 0)
+				}
+			},
+			{
+				Option = "Medium Titanium Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(30, 30, 30)
+				}
+			},
+			{
+				Option = "Silver Birch Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(153, 153, 153)
+				}
+			},
+			{
+				Option = "Smokestone Metallic",
+				Properties = {
+					Skin = 0,
+					Color = Color(156, 153, 145)
+				}
+			},
+			{
+				Option = "Black",
+				Properties = {
+					Skin = 0,
+					Color = Color(0, 0, 0)
+				}
+			},
+			{
+				Option = "Performance White",
+				Properties = {
+					Skin = 0,
+					Color = Color(255, 255, 255)
+				}
+			},
+        }
+	},
+	{
+		Category = "Grille Lighting",
+		Options = {
+            {
+				Option = "Lower",  
+				Components = {
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( 25.6, 112.5, 14.2 ),
+						Angles = Angle( 0, -8, -7 ),
+						Scale = 0.95,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( -25.6, 112.5, 14.2 ),
+						Angles = Angle( 0, 8, -7 ),
+						Scale = 0.95,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+				},
+			},
+			{
+				Option = "Upper",  
+				Components = {
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 11, 108.5, 31.65 ),
+						Angles = Angle( 1.5, -4, 0 ),
+						Scale = 0.9,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -11, 108.5, 31.65 ),
+						Angles = Angle( -1.5, 4, 0 ),
+						Scale = 0.9,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+				},
+			},
+		}
+	},
+	{
+		Category = "Siren",
+		Options = {
+			{
+				Option = "Patlite SAP-500E (LRPD Spec)",
+				Components = {
+					{
+						Name = "@siren",
+						Component = "siren_prototype",
+						--Model = "models/sentry/props/jp/patlitespeaker.mdl",
+						Position = Vector( 0, 107, 30.6 ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 0,
+						SubMaterials = {
+							[0] = "sentry/cvpi_hd/black"
+						},
+						Siren = "patlite_sap500e",
+						Templates = {
+							["Sound"] = { 
+								Tone = {
+									DSP = 0,
+									Pitch = 100
+								}
+							}
+						},
+						Inputs = { 
+							["Emergency.SirenParkKill"] = { ["PARK"] = {} }
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		Category = "Trim Package",
+		Options = {
+			{
+				Option = "LX Sport",
+				BodyGroups = {
+					{ BodyGroup = "pushbar", Value = 0 },
+					{ BodyGroup = "grille", Value = 3 },
+					{ BodyGroup = "hubcaps", Value = 1 },
+					{ BodyGroup = "doortrim", Value = 6 },
+					{ BodyGroup = "rearfascia", Value = 1 },
+					{ BodyGroup = "reartrim", Value = 1 },
+					{ BodyGroup = "handles", Value = 1 },
+					{ BodyGroup = "spotlight_l", Value = 1 },
+					{ BodyGroup = "spotlight_r", Value = 1 },
+					{ BodyGroup = "trunkmodel", Value = 1 },
+					{ BodyGroup = "windowbars", Value = 0 },
+					{ BodyGroup = "partition", Value = 1 },
+					{ BodyGroup = "rims", Value = 1 },
+					{ BodyGroup = "mirrors", Value = 1 },
+					{ BodyGroup = "door_l_notch", Value = 1 },
+					{ BodyGroup = "door_r_notch", Value = 1 },
+					{ BodyGroup = "keypad", Value = 1 },
+					{ BodyGroup = "bumperf_chrome", Value = 0 },
+					{ BodyGroup = "bumperr_chrome", Value = 0 },
+				},
+			},
+			{
+				Option = "LX",
+				BodyGroups = {
+					{ BodyGroup = "pushbar", Value = 0 },
+					{ BodyGroup = "grille", Value = 1 },
+					{ BodyGroup = "hubcaps", Value = 1 },
+					{ BodyGroup = "doortrim", Value = 6 },
+					{ BodyGroup = "rearfascia", Value = 1 },
+					{ BodyGroup = "reartrim", Value = 1 },
+					{ BodyGroup = "handles", Value = 1 },
+					{ BodyGroup = "spotlight_l", Value = 1 },
+					{ BodyGroup = "spotlight_r", Value = 1 },
+					{ BodyGroup = "trunkmodel", Value = 1 },
+					{ BodyGroup = "windowbars", Value = 0 },
+					{ BodyGroup = "partition", Value = 1 },
+					{ BodyGroup = "rims", Value = 1 },
+					{ BodyGroup = "mirrors", Value = 1 },
+					{ BodyGroup = "door_l_notch", Value = 1 },
+					{ BodyGroup = "door_r_notch", Value = 1 },
+					{ BodyGroup = "keypad", Value = 1 },
+					{ BodyGroup = "bumperf_chrome", Value = 1 },
+					{ BodyGroup = "bumperr_chrome", Value = 1 },
+				},
+			},
+			{
+				Option = "Street Appearance Package",
+				BodyGroups = {
+					{ BodyGroup = "pushbar", Value = 0 },
+					{ BodyGroup = "grille", Value = 1 },
+					{ BodyGroup = "hubcaps", Value = 0 },
+					{ BodyGroup = "doortrim", Value = 2 },
+					{ BodyGroup = "rearfascia", Value = 1 },
+					{ BodyGroup = "reartrim", Value = 1 },
+					{ BodyGroup = "handles", Value = 1 },
+					{ BodyGroup = "spotlight_l", Value = 1 },
+					{ BodyGroup = "spotlight_r", Value = 1 },
+					{ BodyGroup = "trunkmodel", Value = 1 },
+					{ BodyGroup = "windowbars", Value = 0 },
+					{ BodyGroup = "partition", Value = 1 },
+					{ BodyGroup = "rims", Value = 0 },
+					{ BodyGroup = "mirrors", Value = 0 },
+					{ BodyGroup = "door_l_notch", Value = 1 },
+					{ BodyGroup = "door_r_notch", Value = 1 },
+					{ BodyGroup = "keypad", Value = 0 },
+					{ BodyGroup = "bumperf_chrome", Value = 1 },
+					{ BodyGroup = "bumperr_chrome", Value = 1 },
+				},
+			},
+			{
+				Option = "Police Interceptor",
+				BodyGroups = {
+					{ BodyGroup = "pushbar", Value = 0 },
+					{ BodyGroup = "grille", Value = 0 },
+					{ BodyGroup = "hubcaps", Value = 0 },
+					{ BodyGroup = "doortrim", Value = 0 },
+					{ BodyGroup = "rearfascia", Value = 0 },
+					{ BodyGroup = "reartrim", Value = 0 },
+					{ BodyGroup = "handles", Value = 0 },
+					{ BodyGroup = "spotlight_l", Value = 1 },
+					{ BodyGroup = "spotlight_r", Value = 1 },
+					{ BodyGroup = "trunkmodel", Value = 0 },
+					{ BodyGroup = "windowbars", Value = 0 },
+					{ BodyGroup = "partition", Value = 1 },
+					{ BodyGroup = "rims", Value = 0 },
+					{ BodyGroup = "mirrors", Value = 0 },
+					{ BodyGroup = "door_l_notch", Value = 1 },
+					{ BodyGroup = "door_r_notch", Value = 1 },
+					{ BodyGroup = "keypad", Value = 0 },
+					{ BodyGroup = "bumperf_chrome", Value = 0 },
+					{ BodyGroup = "bumperr_chrome", Value = 0 },
+				},
+			},
+		}
+	},
+	{
+		Category = "Rain Guards",
+		Options = {
+			{
+				Option = "Rain Guards",
+				BodyGroups = {
+					{ BodyGroup = "rainguards", Value = 1 },
+				},
+			},
+			{
+				Option = "None",
+				BodyGroups = {
+					{ BodyGroup = "rainguards", Value = 0 },
+				},
+			},
+		}
+	},
+    {
+		Category = "Visor Light",
+		Options = {
+			{
+				Option = "Spectralux ILS",
+				Components = {
+					{
+						Component = "photon_fedsig_ils_lrpd",
+						Position = Vector( 0, 12.5, 61 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1.1,
+						Options = {
+							Width = 3,
+							Angle = 10
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {All = "CVPI"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					}
+				}
+			},
+		}
+	},
+	{
+		Category = "Rear Deck Lighting",
+		Options = {
+            {
+				Option = "Signalmaster",
+				Components = {
+					{
+						Component = "photon_fedsig_cn_signalmaster_lrpd",
+						Position = Vector( 0, -78, 52.4 ),
+						Angles = Angle( 0, 270, 0 ),
+						Scale = 1,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {All = "CVPI"},
+								["MODE2"] = {All = "CVPI_LR"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				},
+			},
+
+		}
+	},
+	{
+		Category = "Police Equipment",
+		Options = {
+			{
+				Option = "Police Equipment",
+				Components = {
+					{
+						Component = "photon_pan_toughbookcf30",
+						Position = Vector( 6.5, 13.5, 40 ),
+						Angles = Angle( 0, 31, 0 ),
+						Scale = 1,
+						Options = {
+							Pole = 2,
+							Base = -60,
+							-- You can change the screen material by using this option:
+							Screen = "rin/lrpd2/props/laptop_screen_lrpd",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					}
+				},
+				Props = {
+					{
+						Model = "models/sentry/props/jp/oss_mkd1.mdl",
+						Position = Vector( -0.2, 10, 26.85 ),
+						Angles = Angle( -69, 270, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/necradio.mdl",
+						Position = Vector( -0.2, 12.75, 28 ),
+						Angles = Angle( -69, 270, 0 ),
+						Scale = 1.1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/sap500.mdl",
+						Position = Vector( 0, 7.4, 26.2 ),
+						Angles = Angle( 0, 0, -69 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/anmradio/ANMWhelenMic.mdl",
+						Position = Vector( -7.1, 23, 40 ),
+						Angles = Angle( 0, 180, -45 ),
+						Scale = 1,
+						BodyGroups = {
+							["wire"] = 1,
+						},
+						SubMaterials = {
+							[1] = "rin/lrpd2/props/mic",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/dashcam.mdl",
+						Position = Vector( 3, 16, 61.6 ),
+						Angles = Angle( 8, 264.8, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/sentry/props/jp/dashcam.mdl",
+						Position = Vector( 0, -67, 62.7 ),
+						Angles = Angle( 8, 90, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/schmal/antenna_pod_navigator.mdl",
+						Position = Vector( 29.625, 2.468, 0 ),
+						Angles = Angle( 180, -4.9, -90 ),
+						Scale = 1,
+						Color = Color(0, 0, 0),
+						FollowBone = "trunk"
+					},
+					{
+						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
+						Position = Vector( 49.2, -9.8, 0 ),
+						Angles = Angle( 0, 12, -90 ),
+						Scale = 1,
+						SubMaterials = {
+							[1] = "rin/lrpd2/props/plate_unmarked_rear",
+						},
+						FollowBone = "trunk"
+					},
+					{
+						Model = "models/xenosprops/na_plate/na_plate.mdl",
+						Position = Vector( 0, 118.8, 18.2 ),
+						Angles = Angle( 6.5, 90, 0 ),
+						Scale = 0.97,
+						SubMaterials = {
+							[1] = "rin/lrpd2/props/plate_unmarked_front",
+						},
+					},
+				}
+			}
+		}
+	},
+}

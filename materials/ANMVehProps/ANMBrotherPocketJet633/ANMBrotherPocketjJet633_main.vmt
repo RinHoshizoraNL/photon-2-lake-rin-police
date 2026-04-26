@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMBrotherPocketJet633\ANMBrotherPocketJet633"
+	"$bumpmap" "ANMVehProps\ANMBrotherPocketJet633\ANMBrotherPocketJet633_n"
+	"$envmap" "ANMVehProps\ANMBrotherPocketJet633\ANMBrotherPocketJet633_s"
+	
+	$nocull 			"1"
+	$alphatest		1
+	$alphatestreference		0.5
+	$allowalphatocoverage	1
+}
+

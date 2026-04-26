@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_WhelenMic"
+	"$bumpmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_WhelenMic_n"
+    "$envmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_WhelenMic_s"
+}

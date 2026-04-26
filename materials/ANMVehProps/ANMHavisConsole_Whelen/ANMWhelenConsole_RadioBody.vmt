@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_RadioBody"
+	"$bumpmap" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_RadioBody_n"
+	"$envmap" "ANMVehProps\ANMBrotherPocketJet633\ANMWhelenConsole_RadioBody_s"
+}
+

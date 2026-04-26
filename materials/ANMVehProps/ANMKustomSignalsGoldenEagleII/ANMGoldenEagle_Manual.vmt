@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMKustomSignalsGoldenEagleII\ANMGoldenEagle_Manual"
+	"$bumpmap" "ANMShared\Props\Normal1"
+}
+

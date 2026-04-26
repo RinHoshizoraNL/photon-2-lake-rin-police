@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "ANMVehProps/ANM14ChargerWestinElite/ANM14ChargerWestinElite"
+	"$bumpmap" "ANMShared/Props/ANMBump1"
+	"$envmap" "ANMVehProps/ANM14ChargerWestinElite/ANM14ChargerWestinElite_e"
+
+	"$phong" "1"
+	"$phongexponent" "2.5"
+	"$phongboost" "0.18"
+	"$phongfresnelranges" "[.01 .02 .05]"
+	"$rimlightexponent"       "2"
+}

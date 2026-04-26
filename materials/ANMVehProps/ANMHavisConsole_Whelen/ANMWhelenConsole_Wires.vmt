@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture" "ANMShared\Props\Wires1"
+	"$bumpmap" "ANMShared\Props\Wires1_n"
+	"$envmap" "ANMShared\Props\Wires1_s"
+}
+

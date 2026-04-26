@@ -1,0 +1,9 @@
+UnLitGeneric
+{
+	"$basetexture" "ANMVehProps\ANMHavisConsole_Whelen\ANMWhelenConsole_RadioEmis"
+	
+	"$translucent" "1"
+	"$nocull" "1"
+	"$additive" "1"
+}
+
