@@ -218,7 +218,7 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_whe_500_mass",
+						Component = "photon_whe_500_lrpd",
 						Position = Vector( 0, -69, 51 ),
 						Angles = Angle( 0, -90, 0 ),
 						Scale = 0.9,
@@ -254,7 +254,7 @@ VEHICLE.Equipment = {
 						Name = "@siren_speaker",
 						Component = "siren_prototype",
 						Model = "models/sentry/props/jp/patlitespeaker.mdl",
-						Position = Vector( 4, 119.8, 28.4 ),
+						Position = Vector( 3.5, 119.8, 28.4 ),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
 						SubMaterials = {
@@ -275,7 +275,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Inherit = "@siren_speaker",
-						Position = Vector( -4, 119.8, 28.4 ),
+						Position = Vector( -3.5, 119.8, 28.4 ),
 						Angles = Angle( 0, 270, 0 ),
 						Inputs = {
 							["Emergency.Siren"] = {
@@ -309,24 +309,19 @@ VEHICLE.Equipment = {
 					},
 					--
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( 11, 121.1, 29.2 ),
-						Angles = Angle( 0, 0, 0 ),
+						Component = "koito_autocover_lrpd",
+						Position = Vector( 11, 118.5, 27.7 ),
+						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r",
-							[0] = "sentry/props/koitoflasher/plastic_r",
-						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( -11, 121.1, 29.2 ),
-						Angles = Angle( 0, 0, 0 ),
+						Component = "koito_autocover_lrpd",
+						Position = Vector( -11, 118.5, 27.7 ),
+						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
-						Phase = 90,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Phase = 180,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			},

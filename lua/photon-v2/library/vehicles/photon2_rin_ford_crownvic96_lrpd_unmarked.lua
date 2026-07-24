@@ -304,6 +304,31 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Grille",
+		Options = {
+			{
+				Option = "Grille",
+				Components = {
+					{
+						Component = "koito_autocover_lrpd",
+						Position = Vector( 10, 118, 28 ),
+						Angles = Angle( 0, 85, 0 ),
+						Scale = 0.9,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "koito_autocover_lrpd",
+						Position = Vector( -10, 118, 28 ),
+						Angles = Angle( 0, 95, 0 ),
+						Scale = 0.9,
+						Phase = 180,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				}
+			}
+		}
+	},
+	{
 		Category = "Flashers",
 		Options = {
 			{

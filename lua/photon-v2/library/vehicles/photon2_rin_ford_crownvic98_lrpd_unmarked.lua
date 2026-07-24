@@ -184,24 +184,18 @@ VEHICLE.Equipment = {
 						}
 					},
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( 8.7, 107, 30 ),
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Component = "koito_autocover_lrpd",
+						Position = Vector( 11.8, 114, 13.9 ),
+						Angles = Angle( 0, 87, 0 ),
+						Scale = 0.8,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( -8.7, 107, 30 ),
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						Phase = 90,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Component = "koito_autocover_lrpd",
+						Position = Vector( -11.8, 114, 13.9 ),
+						Angles = Angle( 0, 93, 0 ),
+						Scale = 0.8,
+						Phase = 180,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}

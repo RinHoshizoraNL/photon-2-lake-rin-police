@@ -297,24 +297,19 @@ VEHICLE.Equipment = {
 						}
 					},
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( 10, 124.7, 28.5 ),
-						Angles = Angle( 0, 0, 0 ),
+						Component = "koito_autocover_lrpd",
+						Position = Vector( 9, 125, 27 ),
+						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r",
-							[0] = "sentry/props/koitoflasher/plastic_r",
-						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( -10, 124.7, 28.5 ),
-						Angles = Angle( 0, 0, 0 ),
+						Component = "koito_autocover_lrpd",
+						Position = Vector( -9, 125, 27 ),
+						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
-						Phase = 90,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Phase = 180,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			}
@@ -354,7 +349,7 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_whe_500_mass",
+						Component = "photon_whe_500_lrpd",
 						Position = Vector( 0, -71, 50 ),
 						Angles = Angle( 0, -90, 0 ),
 						Scale = 0.9,
