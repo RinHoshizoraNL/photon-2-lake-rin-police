@@ -58,9 +58,18 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "photon_fedsig_valor_44_lrpd",
-						Position = Vector( 0, -14, 76.6 ),
+						Position = Vector( 0, -14, 76 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 1,
+						BodyGroups = {
+							["feet"] = 1,
+						},
+						Bones = {
+							["valor_44_feet_left"] =	{ Vector( 0, 0, -1.4 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_feet_right"] =	{ Vector( 0, 0, -1.4 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_left"] =	{ Vector( 1, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_right"] =	{ Vector( -1, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+						}
 					},
 				}
 			}
@@ -74,7 +83,7 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "photon_fedsig_opticom795",
-						Position = Vector( 15, -15, 75.3 ),
+						Position = Vector( 17, -17, 74.8 ),
 						Angles = Angle( 0, -90, 0 ),
 						Scale = 0.15
 					}
@@ -381,7 +390,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Model = "models/sentry/props/jp/antenna.mdl",
-						Position = Vector( 25, -11.3, 77.2),
+						Position = Vector( 25.7, -14.5, 76.4),
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 1
 					},

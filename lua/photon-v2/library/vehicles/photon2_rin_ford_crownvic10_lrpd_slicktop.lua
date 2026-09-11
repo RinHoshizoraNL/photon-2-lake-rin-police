@@ -580,6 +580,7 @@ VEHICLE.Equipment = {
 						Inputs = {
 							["Emergency.Warning"] = {
 								["MODE1"] = {All = "CVPI"},
+								["MODE2"] = {All = "SWEEP_CVPI"},
 							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,
@@ -603,6 +604,43 @@ VEHICLE.Equipment = {
 							["Emergency.Warning"] = {
 								["MODE1"] = {All = "CVPI"},
 								["MODE2"] = {All = "CVPI_LR"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -23, -75, 49.5  ),
+						Angles = Angle( 0, 270, 182 ),
+						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 23, -75, 49.5  ),
+						Angles = Angle( 0, 270, 178 ),
+						Scale = 1,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
 							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,

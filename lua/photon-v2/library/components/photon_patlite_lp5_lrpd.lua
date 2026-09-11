@@ -48,8 +48,8 @@ COMPONENT.Segments = {
 			["ON"] = {
 
 			},
-			["SLOW"] = sequence():Flash(0, 1, 1):Stretch(5),
-			["SINGLE"] = sequence():Flash(0, 1, 1):Stretch(3),
+			["SLOW"] = sequence():Flash(0, 1, 1):Stretch(3),
+			["SINGLE"] = sequence():Flash(0, 1, 1):Stretch(2),
 			["QUAD"] = sequence():TripleFlash(0, 1):Stretch(1)
 		}
 	},

@@ -97,45 +97,95 @@ VEHICLE.Equipment = {
 		Category = "Lightbar",
 		Options = {
             {
-				Option = "Patlite AXS-12",
-				Components = {
-					{
-                        Component = "patlite_axs12",
-                        Position = Vector( 0, -19, 70.8 ),
-                        Angles = Angle( -2, -90, 0 ),
-                        Scale = 1.1,
-						States = {
-							[1] = "B",
-							[2] = "B",
-							[3] = "B",
-							[4] = "B",
-						},
-                        Options = {
-                            FeetWidthOffset = 1,
-                            FeetTilt = -3.5,
-                        },
+				Option = "Code3 Arch",
+				Props = {
+				    {
+						Model = "models/anemolis/code3_arch_bar/code3_arch_bar.mdl",
+						Position = Vector( 0, -18.5, 74.6 ),
+                        Angles = Angle( 0, 0, -2 ),
+                        Scale = 0.86,
 						SubMaterials = {
-							[12] = "sentry/props/glass/blue"
+							[0] = "photon/common/blank",
+							[3] = "photon/common/blank",
+							[4] = "photon/common/blank",
+							[5] = "photon/common/blank",
+							[6] = "photon/common/blank",
+							[7] = "photon/common/blank",
 						},
-                    },
-				}
-			},
-		}
-	},
-	{
-		Category = "Lightbar Equipment",
-		Options = {
-			{
-				Option = "Federal Signal Opticom",
+					},
+				},
 				Components = {
 					{
-						Component = "photon_fedsig_opticom795",
-						Position = Vector( 14, -16, 70.7 ),
-						Angles = Angle( -2, -90, 0 ),
-						Scale = 0.15
-					}
-				}
-			}
+                        Component = "whelen_l31_lrpd",
+                        Position = Vector( -18, -19, 71.3 ),
+                        Angles = Angle( 0, 0, -2 ),
+                        Scale = 1,
+					},
+					{
+                        Component = "whelen_l31_lrpd",
+                        Position = Vector( 18, -19, 71.3 ),
+                        Angles = Angle( 0, 180, 2 ),
+                        Scale = 1,
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -18, -14.3, 70.4 ),
+						Angles = Angle( 0, 0, -2 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 18, -14.3, 70.4 ),
+						Angles = Angle( 0, 0, -2 ),
+						Scale = 0.8,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -18, -23.6, 70.7 ),
+						Angles = Angle( 0, 180, 2 ),
+						Scale = 0.8,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 18, -23.6, 70.7 ),
+						Angles = Angle( 0, 180, 2 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -24.5, -19, 70.6 ),
+						Angles = Angle( 2, 90, 0 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 24.5, -19, 70.6 ),
+						Angles = Angle( -2, 270, 0 ),
+						Scale = 0.8,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+				},
+			},
 		}
 	},
 	{

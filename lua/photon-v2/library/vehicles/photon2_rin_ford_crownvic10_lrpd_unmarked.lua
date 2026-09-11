@@ -341,6 +341,7 @@ VEHICLE.Equipment = {
 						Inputs = {
 							["Emergency.Warning"] = {
 								["MODE1"] = {All = "CVPI"},
+								["MODE2"] = {All = "SWEEP_CVPI"},
 							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,

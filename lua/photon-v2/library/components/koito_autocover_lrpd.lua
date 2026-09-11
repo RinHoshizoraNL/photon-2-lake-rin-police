@@ -21,7 +21,7 @@ local wScale = 0.9
 local bScale = 0.66
 local rScale = 0.66
 
-local blue = { r = 0, g = 255, b = 255 }
+local blue = { r = 0, g = 0, b = 255 }
 local red = { r = 255, g = 64, b = 0 }
 local amber = { r = 255, g = 100, b = 0 }
 
@@ -33,14 +33,14 @@ COMPONENT.ElementStates = {
 			IntensityGainFactor = 6,
 			IntensityLossFactor = 6,
 		},
-		["~R"] = {
-			Blend = PhotonColor( 255, 0, 0 ),
-			SourceFillColor = PhotonColor( 255, 0, 0 ):Negative(true):Blend( red ):GetBlendColor(),
-			GlowColor = PhotonColor( 255, 0, 0 ):Negative(true):Blend(red):Scale(0.6):GetBlendColor(),
-			SubtractiveMid = PhotonColor( 255, 0, 0 ):Negative(true):Blend(red):Scale(0.6):GetBlendColor(),
-			SourceDetailColor = PhotonColor( 255,192,0 ):Blend(red):GetBlendColor(), 
-			InnerGlowColor = PhotonColor(255, 0, 0):Blend(red):Scale( rScale ):GetBlendColor(),
-			ShapeGlowColor = PhotonColor(255, 0, 0):Blend(red):GetBlendColor(),
+		["~B"] = {
+			Blend = PhotonColor( 0, 0, 255 ),
+			SourceFillColor = PhotonColor( 0, 0, 255 ):Negative(true):Blend( blue ):GetBlendColor(),
+			GlowColor = PhotonColor( 0, 0, 255 ):Negative(true):Blend(blue):Scale(0.6):GetBlendColor(),
+			SubtractiveMid = PhotonColor( 0, 0, 255 ):Negative(true):Blend(blue):Scale(0.6):GetBlendColor(),
+			SourceDetailColor = PhotonColor( 0, 0, 255 ):Blend(blue):GetBlendColor(), 
+			InnerGlowColor = PhotonColor(0, 0, 255):Blend(blue):Scale( rScale ):GetBlendColor(),
+			ShapeGlowColor = PhotonColor(0, 0, 255):Blend(blue):GetBlendColor(),
 			Intensity = 1,
 			IntensityTransitions = true,
 			IntensityGainFactor = 6,

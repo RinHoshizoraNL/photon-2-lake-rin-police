@@ -313,7 +313,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 11, 118.5, 27.7 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
-						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Component = "koito_autocover_lrpd",
@@ -321,7 +320,6 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
 						Phase = 180,
-						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			},

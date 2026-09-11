@@ -170,7 +170,7 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[0] = "sentry/cvpi_hd/black"
 						},
-						Siren = "sp_mk7",
+						Siren = "sp_mk7_digi",
 						Templates = {
 							["Sound"] = { 
 								Tone = {
