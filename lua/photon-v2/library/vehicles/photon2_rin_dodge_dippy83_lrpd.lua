@@ -144,6 +144,12 @@ VEHICLE.Equipment = {
 				Option = "Police Equipment",
 				Props = {
 					{
+						Model = "models/schmal/pushbar_cvpi96.mdl",
+						Position = Vector( 0, 104, 14 ),
+						Angles = Angle(),
+						Scale = 1
+					},
+					{
 						Model = "models/sentry/props/jp/necradio.mdl",
 						Position = Vector( 1.5, 17, 44.3 ),
 						Angles = Angle( -1, 270, -2 ),
