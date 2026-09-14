@@ -66,23 +66,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Traffic Enforcement (Don't Text & Drive Campaign)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_alt" }
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 5 },
-					{ BodyGroup = "pushbar", Value = 2 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(255, 255, 255)
-					}
-				}
-			},
-			{
-				Option = "Little Tokyo Community Officer",
+				Option = "Little Tokyo Japanese Support Officer",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/crownvic10/little_tokyo" }
 				},

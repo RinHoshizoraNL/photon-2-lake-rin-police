@@ -13,12 +13,9 @@ VEHICLE.Equipment = {
 		Category = "Livery",
 		Options = {
 			{
-				Option = "Traffic Enforcement (Performance White)",
+				Option = "Traffic Enforcement",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(255, 255, 255)
 				},
 				BodyGroups = {
 					{ BodyGroup = "doortrim", Value = 2 },
@@ -57,312 +54,6 @@ VEHICLE.Equipment = {
 					}
 				}
 			},
-			{
-				Option = "Traffic Enforcement (Ebony)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(0, 0, 0)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Arizona Beige Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(71, 66, 55)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Dark Blue Pearl)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(4, 17, 33)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Ultra Blue Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(9, 43, 62)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Light Ice Blue Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(95, 118, 121)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Norsea Blue Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(20, 47, 56)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Dark Toreador Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(56, 4, 8)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Silver Birch Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(90, 89, 85)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Silver Frost Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(89, 94, 95)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Smokestone Metallic)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(107, 108, 95)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Traffic Enforcement (Medium Titanium)",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic_slick" }
-				},
-				Properties = {
-					Color = Color(35, 35, 35)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 1 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate"
-					},
-					{
-						Inherit = "@front_plate"
-					}
-				}
-			},
-			{
-				Option = "Special Operations",
-				SubMaterials = {
-					{ Id = 3, Material = "rin/lrpd2/crownvic10/special_ops" }
-				},
-				Properties = {
-					Color = Color(255, 255, 255)
-				},
-				BodyGroups = {
-					{ BodyGroup = "doortrim", Value = 2 },
-					{ BodyGroup = "pushbar", Value = 2 }
-				},
-				Props = {
-					{
-						Inherit = "@trunk_antenna",
-						Color = Color(0, 0, 0)
-					},
-					{
-						Inherit = "@rear_plate",
-						SubMaterials = {
-							[1] = "rin/lrpd2/props/plate_police",
-						}
-					},
-					{
-						Inherit = "@front_plate",
-						SubMaterials = {
-							[1] = "rin/lrpd2/props/plate_police",
-						}
-					}
-				}
-			}
 		}
 	},
 	{
@@ -549,6 +240,39 @@ VEHICLE.Equipment = {
 						Phase = 180,
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( 25.6, 112.5, 14.2 ),
+						Angles = Angle( 0, -8, -7 ),
+						Scale = 0.95,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( -25.6, 112.5, 14.2 ),
+						Angles = Angle( 0, 8, -7 ),
+						Scale = 0.95,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
 						},
 						Inputs = {
 							["Emergency.Warning"] = {

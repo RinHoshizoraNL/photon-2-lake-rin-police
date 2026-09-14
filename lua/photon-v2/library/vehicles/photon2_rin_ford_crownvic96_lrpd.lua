@@ -65,7 +65,7 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Little Tokyo Community Officer",
+				Option = "Little Tokyo Japanese Support Officer",
 				SubMaterials = {
 					{ Id = 6, Material = "rin/lrpd2/crownvic96/little_tokyo" }
 				},

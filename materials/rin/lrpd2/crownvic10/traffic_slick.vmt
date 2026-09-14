@@ -1,15 +1,16 @@
-"VertexlitGeneric"
+"VertexLitGeneric"
 {
-    "$basetexture" "rin/lrpd2/crownvic10/traffic_slick"
-    "$bumpmap" "rin/lrpd2/crownvic10/traffic_slick_nm"
+	"$basetexture" "rin/lrpd2/crownvic10/traffic_slick"
+    "$bumpmap" "sentry/shared/skin_nm"
+	
+    "$bumpmap" "sentry/shared/skin_nm"
 	
     "$envmap" "env_cubemap"
 	"$envmaptint" "[0.3 0.3 0.3]"
 	"$envmapfresnel" "1"
-	"$blendtintbybasealpha" "1"
    
-    "$phong" "1"
-	"$phongboost" "15"
+    "$phong" "1" 
+	"$phongboost" "15" 
 	"$phongexponent" 3
 	"$phongfresnelranges" "[0.22 0.2 2]"
 
@@ -18,14 +19,7 @@
 	"$rimlightboost" "1"
 	"$rimmask" "1"
 
-	$deftint "[0.01 0.01 0.01]"
-	"Proxies"
-	{
-	"Add"
-		{
-		srcVar1 "$color"
-		srcVar2 "$deftint"
-		resultVar "$phongtint"
-		}
-	}
+	"$phongexponenttexture" "rin/skin_exp"
+	"$phongalbedotint" "1"
+
 }

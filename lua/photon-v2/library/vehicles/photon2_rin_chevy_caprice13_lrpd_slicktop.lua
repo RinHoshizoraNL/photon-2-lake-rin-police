@@ -158,11 +158,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 0, -78, 56.7 ),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE2"] = {All = "CVPI_LR"},
-							},
-						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},
@@ -278,6 +273,25 @@ VEHICLE.Equipment = {
 						Scale = 1,
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( 29, 99.3, 16.3 ),
+						Angles = Angle( -3, -37, 0 ),
+						Scale = 1,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
+						},
+					},
+					{
+						Component = "photon_patlite_lp5_lrpd",
+						Position = Vector( -29, 99.3, 16.3 ),
+						Angles = Angle( 3, 37, 0 ),
+						Scale = 1,
+						SubMaterials = {
+							[5] = "sentry/shared/glass"
 						},
 					},
 				}

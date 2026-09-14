@@ -137,7 +137,7 @@ VEHICLE.Equipment = {
 						Scale = 0.7,
 						Phase = 180,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 					{
@@ -146,7 +146,7 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 2, 0 ),
 						Scale = 0.7,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 				},

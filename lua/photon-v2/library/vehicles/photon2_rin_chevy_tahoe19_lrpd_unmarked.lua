@@ -241,7 +241,7 @@ VEHICLE.Equipment = {
 				Option = "Rear Quarter Windows",
 				Components = {
 				    {
-						Component = "photon_patlite_lp3_lrpd",
+						Component = "photon_patlite_lp5_lrpd",
 						Position = Vector( 40, -95, 63 ),
 						Angles = Angle( 0, -90, 0 ),
 						Scale = 1,
@@ -251,7 +251,7 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_patlite_lp3_lrpd",
+						Component = "photon_patlite_lp5_lrpd",
 						Position = Vector( -40, -95, 63 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 1,
@@ -276,11 +276,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 0, -112, 78 ),
 						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE2"] = {All = "CVPI_LR"},
-							},
-						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},

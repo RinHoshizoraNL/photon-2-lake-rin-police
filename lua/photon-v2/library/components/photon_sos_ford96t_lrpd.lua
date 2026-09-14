@@ -65,15 +65,22 @@ COMPONENT.Segments = {
 			[5] = "1 3 6 8 10",
 			[6] = "1",
 			[7] = "1 3",
-			[8] = "1 3 5 2",
-			[9] = "1 3 5 7 2 4",
-			[10] = "1 3 5 7 9 2 4 6",
-			[11] = "2 4 6 8 3 5 7 9",
-			[12] = "2 4 6 8 10 5 7 9",
-			[13] = "4 6 8 10 7 9",
-			[14] = "6 8 10 9",
-			[15] = "8 10",
-			[16] = "10",
+			[8] = "1 3 5",
+			[9] = "1 3 5 7",
+			[10] = "1 3 5 7 9",
+			[11] = "3 5 7 9",
+			[12] = "5 7 9",
+			[13] = "7 9",
+			[14] = "9",
+			[15] = "2",
+			[16] = "2 4",
+			[17] = "2 4 6",
+			[18] = "2 4 6 8",
+			[19] = "2 4 6 8 10",
+			[20] = "4 6 8 10",
+			[21] = "6 8 10",
+			[22] = "8 10",
+			[23] = "10",
 		},
 		Sequences = {
 			["ON"] = { 1 },
@@ -81,9 +88,9 @@ COMPONENT.Segments = {
 			["ALT_SLOW"] = sequence():Alternate( 2, 3, 7 ),
 			["QUAD_SOLO"] = sequence():FlashHold( { 2, 3 }, 4, 3 ),
 			["ROAD_RUNNER"] = sequence():RoadRunner( 2, 3, 1 ),
-			["LRPD_FLASH"] = sequence():TripleFlash( 5, 4 ),
+			["LRPD_FLASH"] = sequence():TripleFlash( 4, 5 ),
 			["LRPD_CRUISE"] = sequence():Alternate( 4, 5, 7 ),
-			["LRPD_SWEEP"] = { 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 },
+			["LRPD_SWEEP"] = { 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 },
 		}
 	},
 	["DVI"] = {
@@ -200,10 +207,10 @@ COMPONENT.Inputs = {
 			DVI = "ON"
 		},
 		["MODE2"] = {
-			All = "LRPD_CRUISE"
+			All = "LRPD_SWEEP"
 		},
 		["MODE3"] = {
-			All = "LRPD_SWEEP"
+			All = "LRPD_FLASH"
 		}
 	},
 	["Emergency.Directional"] = {

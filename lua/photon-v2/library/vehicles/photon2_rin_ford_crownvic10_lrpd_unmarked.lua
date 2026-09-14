@@ -102,7 +102,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 25.6, 112.5, 14.2 ),
 						Angles = Angle( 0, -8, -7 ),
 						Scale = 0.95,
-						Phase = 180,
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
@@ -119,6 +118,7 @@ VEHICLE.Equipment = {
 						Position = Vector( -25.6, 112.5, 14.2 ),
 						Angles = Angle( 0, 8, -7 ),
 						Scale = 0.95,
+						Phase = 180,
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},

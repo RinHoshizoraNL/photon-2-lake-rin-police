@@ -166,11 +166,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 0, -78, 56.7 ),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE2"] = {All = "CVPI_LR"},
-							},
-						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},

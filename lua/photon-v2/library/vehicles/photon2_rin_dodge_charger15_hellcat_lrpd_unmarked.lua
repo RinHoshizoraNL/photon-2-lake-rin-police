@@ -269,11 +269,6 @@ VEHICLE.Equipment = {
 						BodyGroups = {
 							["mount"] = 1,
 						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE2"] = {All = "CVPI_LR"},
-							},
-						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},

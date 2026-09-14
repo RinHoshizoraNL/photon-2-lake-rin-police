@@ -117,19 +117,11 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Civilian A",
+				Option = "Civilian",
 				BodyGroups = {
 					{ BodyGroup = "mirrors", Value = 2 },
 					{ BodyGroup = "grille", Value = 1 },
 					{ BodyGroup = "wheels", Value = 2 },
-				},
-			},
-			{
-				Option = "Civilian B",
-				BodyGroups = {
-					{ BodyGroup = "mirrors", Value = 2 },
-					{ BodyGroup = "grille", Value = 1 },
-					{ BodyGroup = "wheels", Value = 5 },
 				},
 			},
 		}
@@ -323,7 +315,7 @@ VEHICLE.Equipment = {
 				Option = "Rear Quarter Windows",
 				Components = {
 				    {
-						Component = "photon_patlite_lp3_lrpd",
+						Component = "photon_patlite_lp5_lrpd",
 						Position = Vector( 40, -95, 63 ),
 						Angles = Angle( 0, -90, 0 ),
 						Scale = 1,
@@ -333,7 +325,7 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_patlite_lp3_lrpd",
+						Component = "photon_patlite_lp5_lrpd",
 						Position = Vector( -40, -95, 63 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 1,
@@ -356,29 +348,31 @@ VEHICLE.Equipment = {
 					{
 						Name = "Federal Signal MB1",
 						Component = "photon_fedsig_mb1",
-						Position = Vector( 0, -110, 75.65 ),
+						Position = Vector( 0, -110, 75.8 ),
 						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
+						Scale = 0.85,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_patlite_lp3_lrpd",
-						Position = Vector( 22.2, -110, 77.5 ),
-						Angles = Angle( 0, 180, 0 ),
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -22.5, -113, 77.5  ),
+						Angles = Angle( 0, 265, 2 ),
 						Scale = 1,
-						Phase = 180,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_patlite_lp3_lrpd",
-						Position = Vector( -22.2, -110, 77.5 ),
-						Angles = Angle( 0, 180, 0 ),
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 22.5, -113, 77.5  ),
+						Angles = Angle( 0, 275, -2 ),
 						Scale = 1,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},

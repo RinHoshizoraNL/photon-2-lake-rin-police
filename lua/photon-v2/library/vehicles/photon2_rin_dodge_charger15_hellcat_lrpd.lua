@@ -294,6 +294,12 @@ VEHICLE.Equipment = {
 				},
 				Props = {
 					{
+						Model = "models/anemolis/charger/glass.mdl",
+						Position = Vector( 0, 0, 0 ),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 1,
+					},
+					{
 						Model = "models/sentry/props/jp/oss_mkd1.mdl",
 						Position = Vector( -0.2, 8.1, 30.5 ),
 						Angles = Angle( -69, 270, 0 ),

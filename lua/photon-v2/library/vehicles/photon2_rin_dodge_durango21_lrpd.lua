@@ -271,7 +271,7 @@ VEHICLE.Equipment = {
 						Scale = 0.9,
 						Phase = 180,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 					{
@@ -280,7 +280,7 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 0, 0 ),
 						Scale = 0.9,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 					{
@@ -289,7 +289,7 @@ VEHICLE.Equipment = {
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 					{
@@ -299,7 +299,7 @@ VEHICLE.Equipment = {
 						Scale = 1,
 						Phase = 180,
 						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
+							[5] = "sentry/shared/glass"
 						},
 					},
 				}
