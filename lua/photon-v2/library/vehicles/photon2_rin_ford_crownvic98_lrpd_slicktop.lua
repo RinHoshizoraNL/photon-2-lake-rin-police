@@ -24,6 +24,36 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_cvpi98_lrpd",
+					}
+				}
+			}
+		}
+	},
+	{
+		Category = "Fastrax",
+		Options = {
+            {
+				Option = "Whelen Fastrax",
+				Components = {
+					{
+                        Component = "photon_whe_fastrax_lrpd",
+                        Position = Vector( 0, 0, 0 ),
+                        Angles = Angle( 0, 0, 0 ),
+                        Scale = 1,
+					},
+				}
+			},
+
+		}
+	},
+	{
 		Category = "Wheels",
 		Options = {
 			{

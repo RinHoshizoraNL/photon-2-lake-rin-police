@@ -204,7 +204,7 @@ VEHICLE.Equipment = {
 				Option = "Flashers",
 				Components = {
 					{
-						Component = "photon_standard_chevcap91"
+						Component = "photon_standard_chevcap91_lrpd"
 					}
 				},
 			}

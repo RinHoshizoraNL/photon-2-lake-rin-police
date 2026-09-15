@@ -92,6 +92,19 @@ VEHICLE.Equipment = {
         }
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_cvpi10_lrpd",
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "Grille Lighting",
 		Options = {
             {

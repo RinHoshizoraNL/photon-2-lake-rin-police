@@ -7,7 +7,7 @@ COMPONENT.Credits = {
 	Code = "Schmal"
 }
 
-COMPONENT.PrintName = "2010 Ford Crown Victoria LRPD"
+COMPONENT.PrintName = "1998 Ford Crown Victoria LRPD"
 
 COMPONENT.IsVirtual = true
 
@@ -555,9 +555,11 @@ COMPONENT.Segments = {
 			[6] = "5 6 36 37 17:PASS 18:PASS",
 			[7] = "5:PASS 6:PASS 17 18",
 			[8] = "5 6 36 37 17 18",
+			[9] = "17",
+			[10] = "18",
 		},
 		Sequences = {
-			FLASH = sequence():Alternate(1,2,5),
+			FLASH = sequence():Alternate(9,10,5),
 			FLASH2 = sequence()
 			:Alternate(8,0,3):Do(2):Steady(0,2):Alternate(8,0,3):Do(2):Steady(0,2)
 			:Alternate(6,7,3):Do(2):Steady(0,2):Alternate(6,7,3):Do(2):Steady(0,2)
@@ -571,15 +573,18 @@ COMPONENT.Segments = {
 	["Taillight_flashers_strobe"] = {
 		Frames = {
 			[0] = "[OFF] 15 16 23 24 38 39",
-			[1] = "15:~RI 24 38",
-			[2] = "16:~RI 23 39",
+			[1] = "24",
+			[2] = "23",
 			[3] = "[PASS] 15 16 23 24 38 39",
-			[4] = "23",
-			[5] = "24",
 		},
 		Sequences = {
-			FLASH = { 5,0,5,0,5,0,4,0,4,0,4,0},
-			--FLASH = sequence():TripleFlash(4, 5):Stretch(1)
+			-- FLASH = { 
+			-- 		1, 1, 1, 1, 1, 1,
+			-- 		0,
+			-- 		2, 2, 2, 2, 2, 2,
+			-- 		0,
+			-- 	},
+			FLASH = sequence():QuadFlash( 1, 2 )
 		}
 	},
 	["Signal_L_DIM"] = {
@@ -686,9 +691,9 @@ COMPONENT.Inputs = {
 	["Emergency.Warning"] = {
 		["MODE3"] = {
 			Headlight_flashers = "FLASH2",
-			--Taillight_flashers = "FLASH",
+			Taillight_flashers = "FLASH",
 			Markers_flashers_strobe = "FLASH",
-			Taillight_flashers_strobe = "FLASH",
+			--Taillight_flashers_strobe = "FLASH",
 		}
 	},
 	["Vehicle.Brake"] = {

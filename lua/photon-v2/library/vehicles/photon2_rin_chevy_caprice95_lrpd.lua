@@ -76,7 +76,7 @@ VEHICLE.Equipment = {
 				Option = "Flashers",
 				Components = {
 					{
-						Component = "photon_standard_chevcap91"
+						Component = "photon_standard_chevcap91_lrpd"
 					}
 				},
 			}
@@ -182,24 +182,53 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "koito_flasher_lrpd",
-						Position = Vector( 15, -80, 44 ),
+						Position = Vector( 18.5, -69.7, 48 ),
 						Angles = Angle( 0, 180, 0 ),
 						Scale = 0.9,
 						SubMaterials = {
 							[3] = "schmal/photon/fedsig_legend/dome_r",
 							[0] = "sentry/props/koitoflasher/plastic_r",
 						},
+						BodyGroups = {
+							["mount"] = 1,
+						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Component = "koito_flasher_lrpd",
-						Position = Vector( -15, -80, 44 ),
+						Position = Vector( -18.5, -69.7, 48 ),
 						Angles = Angle( 0, 180, 0 ),
 						Scale = 0.9,
 						Phase = 90,
 						SubMaterials = {
 							[3] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						BodyGroups = {
+							["mount"] = 1,
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_whe_500_lrpd",
+						Position = Vector( 0, -71, 43 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = 0.9,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				},
+				Props = {
+					{
+						Model = "models/schmal/antenna_gps.mdl",
+						Position = Vector( -18.7, -70, 36.3),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = Vector( 1, 1, 2),
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/schmal/antenna_gps.mdl",
+						Position = Vector( 18.7, -70, 36.3),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = Vector( 1, 1, 2),
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}

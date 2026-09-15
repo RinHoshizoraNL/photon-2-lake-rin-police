@@ -148,6 +148,19 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_cvpi10_lrpd",
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "ALPR",
 		Options = {
 			{
@@ -429,6 +442,7 @@ VEHICLE.Equipment = {
 						Position = Vector( -10, -78, 50.5  ),
 						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
+						Phase = 180,
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,
@@ -447,7 +461,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 10, -78, 50.5  ),
 						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
-						Phase = 180,
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,

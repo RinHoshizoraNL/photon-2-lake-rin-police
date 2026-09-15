@@ -99,6 +99,19 @@ VEHICLE.Equipment = {
         }
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_cvpi98_lrpd",
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "Beacon",
 		Options = {
 			{

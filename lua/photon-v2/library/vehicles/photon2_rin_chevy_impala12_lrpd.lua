@@ -37,6 +37,19 @@ VEHICLE.Equipment = {
         }
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_2012impala_lrpd",
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "Pushbar",
 		Options = {
 			{
