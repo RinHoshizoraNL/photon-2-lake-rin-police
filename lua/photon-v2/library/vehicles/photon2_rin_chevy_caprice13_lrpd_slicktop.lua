@@ -241,6 +241,11 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "oss_laf150_lrpd",
@@ -255,6 +260,11 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp3_lrpd",
@@ -265,6 +275,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp3_lrpd",
@@ -274,6 +289,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -284,6 +304,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -293,6 +318,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
@@ -312,6 +342,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -322,6 +357,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},

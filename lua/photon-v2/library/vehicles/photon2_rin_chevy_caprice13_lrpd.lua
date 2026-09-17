@@ -254,9 +254,26 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "photon_fedsig_valor_44_lrpd",
-						Position = Vector( 0, -15, 71.5 ),
+						Position = Vector( 0, -13, 70.9 ),
 						Angles = Angle( 2, 90, 0 ),
 						Scale = 0.89,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {
+									NO_DVI_F = "ON",
+									NO_DVI_R = "ON",
+								}
+							}
+						},
+						BodyGroups = {
+							["feet"] = 1,
+						},
+						Bones = {
+							["valor_44_feet_left"] =	{ Vector( 0, 0, -1.4 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_feet_right"] =	{ Vector( 0, 0, -1.4 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_left"] =	{ Vector( 0.8, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_right"] =	{ Vector( -0.8, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+						}
 					},
 				}
 			}
@@ -270,7 +287,7 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "photon_fedsig_opticom795",
-						Position = Vector( 13.5, -16, 70.3 ),
+						Position = Vector( 13.5, -14, 69.5 ),
 						Angles = Angle( -2, -90, 0 ),
 						Scale = 0.15
 					}
@@ -354,6 +371,11 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "oss_laf150_lrpd",
@@ -369,6 +391,11 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp3_lrpd",
@@ -378,6 +405,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp3_lrpd",
@@ -388,6 +420,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
@@ -408,6 +445,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -417,6 +459,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
@@ -445,6 +492,11 @@ VEHICLE.Equipment = {
 							["shroud"] = 1,
 							["mount"] = 1,
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
@@ -456,6 +508,11 @@ VEHICLE.Equipment = {
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
@@ -602,7 +659,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Model = "models/sentry/props/jp/antenna.mdl",
-						Position = Vector( 22, -12.5, 71.8),
+						Position = Vector( 23, -13.7, 71.4),
 						Angles = Angle( 0, 0, -2.5 ),
 						Scale = 1
 					},

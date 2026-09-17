@@ -238,6 +238,11 @@ VEHICLE.Equipment = {
 							[1] = "sentry/shared/glass",
 							[2] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "oss_laf150_lrpd",
@@ -253,6 +258,11 @@ VEHICLE.Equipment = {
 							[1] = "sentry/shared/glass",
 							[2] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
@@ -268,6 +278,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -277,6 +292,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
@@ -334,6 +354,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "photon_patlite_lp5_lrpd",
@@ -344,6 +369,11 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[5] = "sentry/shared/glass"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},

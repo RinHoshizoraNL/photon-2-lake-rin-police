@@ -37,6 +37,53 @@ VEHICLE.Equipment = {
         }
 	},
 	{
+		Category = "Lightbar",
+		Options = {
+			{
+				Option = "Federal Signal Legend",
+				Components = {
+					{
+						Component = "photon_fedsig_legend_lrpd",
+						Position = Vector( 0, -12.5, 79.5 ),
+						Angles = Angle( 1.5, 90, 0 ),
+						Scale = 0.88,
+						SubMaterials = {
+						[6] = "schmal/photon/fedsig_legend/dome_r"
+						},
+					},
+				}
+			},
+			{
+				Option = "Federal Signal Valor",
+				Components = {
+					{
+						Component = "photon_fedsig_valor_44_lrpd",
+						Position = Vector( 0, -6.5, 77.1 ),
+						Angles = Angle( 1.5, 90, 0 ),
+						Scale = 1,
+						BodyGroups = {
+							["feet"] = 1,
+						},
+						Bones = {
+							["valor_44_feet_left"] =	{ Vector( 0, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_feet_right"] =	{ Vector( 0, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_left"] =	{ Vector( 0, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["valor_44_mount_right"] =	{ Vector( 0, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {
+									NO_DVI_F = "ON",
+									NO_DVI_R = "ON",
+								}
+							}
+						}
+					},
+				}
+			}
+		}
+	},
+	{
 		Category = "Lighting",
 		Options = {
 			{
@@ -240,25 +287,6 @@ VEHICLE.Equipment = {
 		}
 	},
     {
-		Category = "Lightbar",
-		Options = {
-			{
-				Option = "Federal Signal Legend",
-				Components = {
-					{
-						Component = "photon_fedsig_legend_lrpd",
-						Position = Vector( 0, -12.5, 79.5 ),
-						Angles = Angle( 1.5, 90, 0 ),
-						Scale = 0.88,
-						SubMaterials = {
-						[6] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				}
-			}
-		}
-	},
-	{
 		Category = "Rear Deck",
 		Options = {
             {
@@ -277,6 +305,7 @@ VEHICLE.Equipment = {
 						Position = Vector( -14, -78, 60 ),
 						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
+						Phase = 180,
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,
@@ -295,7 +324,6 @@ VEHICLE.Equipment = {
 						Position = Vector( 14, -78, 60 ),
 						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
-						Phase = 180,
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,
