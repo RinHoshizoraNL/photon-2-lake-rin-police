@@ -50,7 +50,62 @@ VEHICLE.Equipment = {
 					},
 				}
 			},
-
+		}
+	},
+	{
+		Category = "Visor Lights",
+		Options = {
+            {
+				Option = "Federal Signal GS1",
+				Components = {
+					{
+                        Component = "fitp_photon_fs_gs1",
+                        Position = Vector( -1.9, 13.9, 63  ),
+                        Angles = Angle( 0, 90, 180 ),
+                        Scale = 0.7,
+						States = {[1] = "B",},
+						SubMaterials = {
+							[2] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+                        Component = "fitp_photon_fs_gs1",
+                        Position = Vector( -5.5, 13.7, 63  ),
+                        Angles = Angle( 0, 94, 180 ),
+                        Scale = 0.7,
+						States = {[1] = "B",},
+						SubMaterials = {
+							[2] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+                        Component = "fitp_photon_fs_gs1",
+                        Position = Vector( 1.9, 13.9, 63  ),
+                        Angles = Angle( 0, 90, 180 ),
+                        Scale = 0.7,
+						Phase = 180,
+						States = {[1] = "B",},
+						SubMaterials = {
+							[2] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+                        Component = "fitp_photon_fs_gs1",
+                        Position = Vector( 5.5, 13.7, 63  ),
+                        Angles = Angle( 0, 88, 180 ),
+                        Scale = 0.7,
+						Phase = 180,
+						States = {[1] = "B",},
+						SubMaterials = {
+							[2] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				}
+			},
 		}
 	},
 	{
@@ -354,7 +409,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Model = "models/supermighty/photon/dashcam.mdl",
-						Position = Vector( 7.5, 13.8, 58.55),
+						Position = Vector( 8, 13.7, 58.55),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
 						RenderGroup = RENDERGROUP_OPAQUE,

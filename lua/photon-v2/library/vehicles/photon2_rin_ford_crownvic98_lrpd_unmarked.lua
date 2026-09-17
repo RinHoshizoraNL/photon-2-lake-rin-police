@@ -327,7 +327,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Model = "models/supermighty/photon/dashcam.mdl",
-						Position = Vector( 7.5, 13.8, 58.55),
+						Position = Vector( 8, 13.7, 58.55),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
 						RenderGroup = RENDERGROUP_OPAQUE,
