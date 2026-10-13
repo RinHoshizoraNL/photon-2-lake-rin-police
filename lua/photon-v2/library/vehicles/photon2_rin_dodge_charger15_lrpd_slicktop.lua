@@ -181,6 +181,39 @@ VEHICLE.Equipment = {
         }
 	},
 	{
+		Category = "Side Lights",
+		Options = {
+            {
+				Option = "Side Lights",
+				Components = {
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -37.5, -31, 53.7  ),
+						Angles = Angle( 0, 182, 183 ),
+						Scale = 0.8,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 37.5, -31, 53.7  ),
+						Angles = Angle( 0, -2, 177 ),
+						Scale = 0.8,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				},
+			},
+        }
+	},
+	{
 		Category = "Pushbar",
 		Options = {
 			{

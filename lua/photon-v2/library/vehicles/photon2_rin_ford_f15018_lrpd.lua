@@ -15,75 +15,11 @@ VEHICLE.Equipment = {
 				SubMaterials = {
 					{ Id = 29, Material = "rin/lrpd2/f150/patrol" }
 				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 3 },
-				},
-				Components = {
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( -24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( 24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						Phase = 180,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				},
-				Props = {
-				    {
-						Model = "models/schmal/f150xl_bedcover_generic.mdl",
-						Position = Vector( 0, -86.5, 66.3 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-					},
-				},
 			},
 			{
 				Option = "K-9 Unit Dia",
 				SubMaterials = {
 					{ Id = 29, Material = "rin/lrpd2/f150/k9" }
-				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 3 },
-				},
-				Components = {
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( -24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( 24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						Phase = 180,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				},
-				Props = {
-				    {
-						Model = "models/schmal/f150xl_bedcover_generic.mdl",
-						Position = Vector( 0, -86.5, 66.3 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-					},
 				},
 			},
 			{
@@ -91,93 +27,17 @@ VEHICLE.Equipment = {
 				SubMaterials = {
 					{ Id = 29, Material = "rin/lrpd2/f150/supervisor" }
 				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 3 },
-				},
-				Components = {
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( -24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( 24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						Phase = 180,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				},
-				Props = {
-				    {
-						Model = "models/schmal/f150xl_bedcover_generic.mdl",
-						Position = Vector( 0, -86.5, 66.3 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-					},
-				},
 			},
 			{
 				Option = "Commercial Vehicle Enforcement",
 				SubMaterials = {
 					{ Id = 29, Material = "rin/lrpd2/f150/cve" }
 				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 2 },
-				},
 			},
 			{
 				Option = "Marine Unit",
 				SubMaterials = {
 					{ Id = 29, Material = "rin/lrpd2/f150/marine" }
-				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 3 },
-				},
-				Components = {
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( -24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "photon_patlite_lp5_lrpd",
-						Position = Vector( 24, -49.6, 91.5 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						Phase = 180,
-						SubMaterials = {
-							[5] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				},
-				Props = {
-				    {
-						Model = "models/schmal/f150xl_bedcover_generic.mdl",
-						Position = Vector( 0, -86.5, 66.3 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-					},
-				},
-			},
-			{
-				Option = "Bomb Squad",
-				SubMaterials = {
-					{ Id = 29, Material = "rin/lrpd2/f150/bomb" }
-				},
-				BodyGroups = {
-					{ BodyGroup = "bed", Value = 2 },
 				},
 			},
 		}
@@ -194,24 +54,28 @@ VEHICLE.Equipment = {
 						Angles = Angle( 2, 90, 0 ),
 						Scale = 1.03,
 					},
-				}
-			}
-		}
-	},
-	{
-		Category = "Lightbar Equipment",
-		Options = {
-			{
-				Option = "Federal Signal Opticom",
-				Components = {
 					{
 						Component = "photon_fedsig_opticom795",
 						Position = Vector( 18, 11, 92.5 ),
 						Angles = Angle( -2, -90, 0 ),
 						Scale = 0.15
 					}
+				},
+				Props = {
+					{
+						Model = "models/sentry/props/jp/antenna.mdl",
+						Position = Vector( 29, 15, 94.1),
+						Angles = Angle( 0, 0, -2 ),
+						Scale = 1
+					},
+					{
+						Model = "models/sentry/props/jp/antenna.mdl",
+						Position = Vector( 0, -37, 92),
+						Angles = Angle( 0, 0, 8 ),
+						Scale = 1
+					},
 				}
-			}
+			},
 		}
 	},
 	{
@@ -226,6 +90,7 @@ VEHICLE.Equipment = {
 					{ BodyGroup = "rear bumper", Value = 0 },
 					{ BodyGroup = "mirrors", Value = 0 },
 					{ BodyGroup = "responder badge", Value = 1 },
+					{ BodyGroup = "bed", Value = 3 },
 				},
 			},
 			{
@@ -237,6 +102,7 @@ VEHICLE.Equipment = {
 					{ BodyGroup = "rear bumper", Value = 2 },
 					{ BodyGroup = "mirrors", Value = 0 },
 					{ BodyGroup = "responder badge", Value = 0 },
+					{ BodyGroup = "bed", Value = 3 },
 				},
 			},
 			{
@@ -248,6 +114,7 @@ VEHICLE.Equipment = {
 					{ BodyGroup = "rear bumper", Value = 0 },
 					{ BodyGroup = "mirrors", Value = 0 },
 					{ BodyGroup = "responder badge", Value = 0 },
+					{ BodyGroup = "bed", Value = 3 },
 				},
 			},
 		}
@@ -262,8 +129,8 @@ VEHICLE.Equipment = {
 						Name = "@siren",
 						Component = "siren_prototype",
 						Model = "models/sentry/props/jp/patlitespeaker.mdl",
-						Position = Vector( 5, 138, 40.967 ),
-						Angles = Angle( 0, 270, 0 ),
+						Position = Vector( 13, 138, 34.5 ),
+						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
 						SubMaterials = {
 							[0] = "sentry/cvpi_hd/black"
@@ -280,7 +147,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Inherit = "@siren",
-						Position = Vector( -5, 138, 40.967 ),
+						Position = Vector( -13, 138, 34.5 ),
 						Siren = "patlite_sap500e",
 						Inputs = {
 							["Emergency.Siren"] = {
@@ -416,6 +283,12 @@ VEHICLE.Equipment = {
 				},
 				Props = {
 					{
+						Model = "models/schmal/f150xl_bedcover_generic.mdl",
+						Position = Vector( 0, -86.5, 66.3 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1,
+					},
+					{
 						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",
 						Position = Vector( 0, -131.2, 34 ),
 						Angles = Angle( 0, 270, 00 ),
@@ -438,18 +311,6 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[1] = "rin/lrpd2/props/plate_police",
 						},
-					},
-					{
-						Model = "models/sentry/props/jp/antenna.mdl",
-						Position = Vector( 29, 15, 94.1),
-						Angles = Angle( 0, 0, -2 ),
-						Scale = 1
-					},
-					{
-						Model = "models/sentry/props/jp/antenna.mdl",
-						Position = Vector( 0, -37, 92),
-						Angles = Angle( 0, 0, 8 ),
-						Scale = 1
 					},
 					{
 						Model = "models/sentry/props/jp/oss_mkd1.mdl",

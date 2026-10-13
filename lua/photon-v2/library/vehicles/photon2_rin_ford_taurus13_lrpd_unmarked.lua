@@ -317,6 +317,12 @@ VEHICLE.Equipment = {
 							Width = 7.5,
 							Angle = 10
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {All = "CVPI"},
+								["MODE2"] = {All = "SWEEP_CVPI"},
+							},
+						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					}
 				}
@@ -334,6 +340,12 @@ VEHICLE.Equipment = {
 						Position = Vector( 0, -79, 55.55 ),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = 1,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {All = "CVPI"},
+								["MODE2"] = {All = "CVPI_LR"},
+							},
+						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},

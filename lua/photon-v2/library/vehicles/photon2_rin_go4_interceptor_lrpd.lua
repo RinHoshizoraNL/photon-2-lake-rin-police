@@ -54,27 +54,14 @@ VEHICLE.Equipment = {
 		Category = "Lightbar",
 		Options = {
             {
-				Option = "Patlite AJS-12",
+				Option = "Whelen Freedom Mini",
 				Components = {
 					{
-                        Component = "patlite_ajs12",
-                        Position = Vector( 0, -19, 85.7 ),
-                        Angles = Angle( -2, -90, 0 ),
-                        Scale = 0.95,
-						States = {
-							[1] = "B",
-							[2] = "B",
-							[3] = "B",
-							[4] = "B",
-						},
-                        Options = {
-                            FeetWidthOffset = 0,
-                            FeetTilt = 2,
-                        },
-						SubMaterials = {
-							[2] = "sentry/props/koitoflasher/glass_blue",
-						},
-                    },
+						Component = "photon_whelen_freedommini_lrpd",
+						Position = Vector( 0, -16, 85.5 ),
+						Angles = Angle( 1.7, 90, 0 ),
+						Scale = 1,
+					},
 				}
 			},
 

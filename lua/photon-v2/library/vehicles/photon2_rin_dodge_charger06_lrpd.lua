@@ -33,79 +33,47 @@ VEHICLE.Equipment = {
 			},
 		}
 	},
-    {
-		Category = "Lighting Setup",
+	{
+		Category = "Lightbar",
 		Options = {
-            {
-				Option = "2006",
+			{
+				Option = "Federal Signal Legend",
 				Components = {
 					{
-                        Component = "patlite_axs12",
-                        Position = Vector( 0, -10, 71.3 ),
-                        Angles = Angle( -1, -90, 0 ),
-                        Scale = 1.2,
-						States = {
-							[1] = "B",
-							[2] = "B",
-							[3] = "B",
-							[4] = "B",
-						},
-                        Options = {
-                            FeetWidthOffset = 1,
-                            FeetTilt = -4,
-                        },
+						Component = "photon_fedsig_legend_lrpd",
+						Position = Vector( 0, -10, 71.7 ),
+						Angles = Angle( 1, 90, 0 ),
+						Scale = 0.97,
 						SubMaterials = {
-							[12] = "sentry/props/glass/blue"
+						[6] = "schmal/photon/fedsig_legend/dome_r"
 						},
-                    },
-                    {
-						Component = "koito_flasher_lrpd",
-						Position = Vector( 11, 127.4, 27.8 ),
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r",
-							[0] = "sentry/props/koitoflasher/plastic_r",
+						BodyGroups = {
+							["feet"] = 1,
+							["straps"] = 1,
+						},
+						Bones = {
+							["foot_left"] =	{ Vector( 1.3, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["foot_right"] =	{ Vector( -1.3, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["strap_left"] =	{ Vector( -0.7, 0, 0 ), Angle( -26, 0, -1 ), 1 },
+							["strap_right"] =	{ Vector( 0.7, 0, 0 ), Angle( 26, 0, -1 ), 1 },
 						},
 					},
-					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( -11, 127.4, 27.8 ),
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						Phase = 90,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-                    {
-						Component = "koito_flasher_lrpd",
-						Position = Vector( 18, -71, 55.8 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r",
-							[0] = "sentry/props/koitoflasher/plastic_r",
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-					},
-					{
-						Component = "koito_flasher_lrpd",
-						Position = Vector( -18, -71, 55.8 ),
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 0.9,
-						Phase = 90,
-						SubMaterials = {
-							[3] = "schmal/photon/fedsig_legend/dome_r"
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-					},
+				}
+			},
+		}
+	},
+	{
+		Category = "Pushbar",
+		Options = {
+			{
+				Option = "Pushbar",
+				Components = {
 					{
 						Name = "@siren",
 						Component = "siren_prototype",
 						Model = "models/sentry/props/jp/patlitespeaker.mdl",
-						Position = Vector( 4, 127, 26.9 ),
-						Angles = Angle( 0, 270, 0 ),
+						Position = Vector( 12, 127, 23 ),
+						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
 						SubMaterials = {
 							[0] = "sentry/cvpi_hd/black"
@@ -125,8 +93,7 @@ VEHICLE.Equipment = {
 					},
 					{
 						Inherit = "@siren",
-						Name = "@siren_2",
-						Position = Vector( -4, 127, 26.9 ),
+						Position = Vector( -12, 127, 23 ),
 						Siren = "patlite_sap500e",
 						Inputs = {
 							["Emergency.Siren"] = {
@@ -157,86 +124,82 @@ VEHICLE.Equipment = {
                         		["MANOVRD"] = {}
                         	}
                         }
-					}
+					},
+					{
+						Name = "@pushbar_laf150",  --LEFT FRONT FLASHER
+						Component = "oss_laf150_lrpd",
+						Position = Vector( -10, 126.8, 29.15 ),
+						BodyGroups = {
+							["bracket"] = 0,
+							["mount"] = 0,
+						},
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[1] = "schmal/photon/fedsig_legend/dome_r",
+							[2] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Inherit = "@pushbar_laf150", --RIGHT FRONT FLASHER
+						Position = Vector( 10, 126.8, 29.15 ),
+						Angles = Angle( 0, 0, 0 ),
+						Phase = 180,
+					},
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( 18.8, 126.2, 25 ),
+						Angles = Angle( 0, 270, 0 ),
+						Scale = 1,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
+					{
+						Component = "photon_patlite_lp3_lrpd",
+						Position = Vector( -18.8, 126.2, 25 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1,
+						Phase = 180,
+						SubMaterials = {
+							[5] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						}
+					},
 				}
 			},
+		}
+	},
+	{
+		Category = "Interior Lighting",
+		Options = {
             {
-				Option = "2007",
+				Option = "Rear Deck",
 				Components = {
 					{
-						Component = "photon_fedsig_legend_lrpd",
-						Position = Vector( 0, -11, 72.7 ),
-						Angles = Angle( 0, 90, 0 ),
-						Scale = 0.92,
-						SubMaterials = {
-						[6] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-                    {
-						Component = "oss_laf150_lrpd",
-						Position = Vector( -10, 127, 27.5 ),
-						BodyGroups = {
-							["bracket"] = 0,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						Phase = 180,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {Light = "SLOW"},
-								["MODE2"] = {Light = "SINGLE"},
-								["MODE3"] = {Light = "QUAD"},
-							},
-						}
-					},
-					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( 10, 127, 27.5 ),
-						BodyGroups = {
-							["bracket"] = 0,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 0.9,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {Light = "SLOW"},
-								["MODE2"] = {Light = "SINGLE"},
-								["MODE3"] = {Light = "QUAD"},
-							},
-						}
-					},
-                    {
 						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( -14, -80, 54 ),
-						Angles = Angle( 0, 270, 180 ),
-						Scale = 1,
-						BodyGroups = {
-							["shroud"] = 1,
-							["mount"] = 1,
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {Light = "SLOW"},
-								["MODE2"] = {Light = "SINGLE"},
-								["MODE3"] = {Light = "QUAD"},
-							},
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-					},
-					{
-						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( 14, -80, 54 ),
-						Angles = Angle( 0, 270, 180 ),
+						Position = Vector( -12, -82, 54  ),
+						Angles = Angle( 0, 270, 181 ),
 						Scale = 1,
 						Phase = 180,
 						BodyGroups = {
@@ -253,18 +216,26 @@ VEHICLE.Equipment = {
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Inherit = "@siren",
-						Position = Vector( -12.5, 127, 21 ),
-						Angles = Angle( 0, 270, 180 )
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 12, -82, 54  ),
+						Angles = Angle( 0, 270, 179 ),
+						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
-					{
-						Inherit = "@siren_2",
-						Position = Vector( 12.5, 127, 21 ),
-						Angles = Angle( 0, 270, 180 )
-					}
-				}
-			}
-		}
+				},
+			},
+        }
 	},
     {
 		Category = "Wheels",
@@ -341,7 +312,7 @@ VEHICLE.Equipment = {
 				Props = {
 					{
 						Model = "models/supermighty/setina/setina_impala_pushbar.mdl",
-						Position = Vector( 0, 123.5, 20.7 ),
+						Position = Vector( 0, 123.5, 22.7 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = Vector( 1, 1.1, 1.1 ),
 					},

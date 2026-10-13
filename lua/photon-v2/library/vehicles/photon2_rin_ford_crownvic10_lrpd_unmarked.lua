@@ -370,14 +370,77 @@ VEHICLE.Equipment = {
 				Option = "Signalmaster",
 				Components = {
 					{
-						Component = "photon_fedsig_cn_signalmaster_lrpd",
-						Position = Vector( 0, -78, 52.4 ),
-						Angles = Angle( 0, 270, 0 ),
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -21, -75.3, 50  ),
+						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
 						Inputs = {
 							["Emergency.Warning"] = {
-								["MODE1"] = {All = "CVPI"},
-								["MODE2"] = {All = "CVPI_LR"},
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -13.3, -75.3, 50  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						Phase = 180,
+						States = { "R" },
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 21, -75.3, 50  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 13.3, -75.3, 50  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						States = { "A" },
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
 							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,

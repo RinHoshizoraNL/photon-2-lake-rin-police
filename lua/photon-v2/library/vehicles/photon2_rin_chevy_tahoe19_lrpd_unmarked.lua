@@ -290,14 +290,14 @@ VEHICLE.Equipment = {
 				Option = "Whelen Ion",
 				Components = {
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( -34.5, -112.5, 77.5 ),
 						Angles = Angle( -72, 0, 180 ),
 						Scale = 0.8,
 						States = { "B", "R" }
 					},
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( -36.4, -116, 71.2 ),
 						Angles = Angle( -75, 0, 180 ),
 						Scale = 0.8,
@@ -305,14 +305,14 @@ VEHICLE.Equipment = {
 						States = { "B", "R" }
 					},
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( -37.9, -118, 65 ),
 						Angles = Angle( -78, 0, 180 ),
 						Scale = 0.8,
 						States = { "B", "R" }
 					},
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( 34.5, -112.5, 77.5 ),
 						Angles = Angle( 72, 0, 180 ),
 						Scale = 0.8,
@@ -320,14 +320,14 @@ VEHICLE.Equipment = {
 						States = { "B", "R" }
 					},
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( 36.4, -116, 71.2 ),
 						Angles = Angle( 75, 0, 180 ),
 						Scale = 0.8,
 						States = { "B", "R" }
 					},
 					{
-						Component = "photon_whe_ion",
+						Component = "photon_whe_ion_lrpd",
 						Position = Vector( 37.9, -118, 65 ),
 						Angles = Angle( 78, 0, 180 ),
 						Scale = 0.8,

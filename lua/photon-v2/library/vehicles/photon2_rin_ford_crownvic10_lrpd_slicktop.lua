@@ -330,26 +330,143 @@ VEHICLE.Equipment = {
 		Category = "Rear Deck Lighting",
 		Options = {
             {
-				Option = "Signalmaster",
+				Option = "Federal Signal X-Stream",
 				Components = {
 					{
-						Component = "photon_fedsig_cn_signalmaster_lrpd",
-						Position = Vector( 0, -78, 52.4 ),
-						Angles = Angle( 0, 270, 0 ),
+						Component = "photon_whelen_dom_cvpi_lrpd",
+						Position = Vector( 0, -76.5, 50.7 ),
+						Angles = Angle( 0, 0, 0 ),
 						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -21, -75.3, 52.7  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
 						Inputs = {
 							["Emergency.Warning"] = {
-								["MODE1"] = {All = "CVPI"},
-								["MODE2"] = {All = "CVPI_LR"},
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
 							},
 						},
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( -23, -75, 49.5  ),
-						Angles = Angle( 0, 270, 182 ),
+						Position = Vector( -13.3, -75.3, 52.7  ),
+						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
+						Phase = 180,
+						States = { "R" },
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 21, -75.3, 52.7  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 13.3, -75.3, 52.7  ),
+						Angles = Angle( 0, 270, 180 ),
+						Scale = 1,
+						States = { "A" },
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 2,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -3.7, -66, 61  ),
+						Angles = Angle( 0, 270, 0 ),
+						Scale = 1,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 0,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 3.7, -66, 61  ),
+						Angles = Angle( 0, 270, 0 ),
+						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 0,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				},
+			},
+		}
+	},
+	{
+		Category = "Side Lights",
+		Options = {
+            {
+				Option = "Side Lights",
+				Components = {
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -38, -23, 45.5  ),
+						Angles = Angle( 0, 180, 182 ),
+						Scale = 0.8,
 						BodyGroups = {
 							["shroud"] = 1,
 							["mount"] = 1,
@@ -365,9 +482,9 @@ VEHICLE.Equipment = {
 					},
 					{
 						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( 23, -75, 49.5  ),
-						Angles = Angle( 0, 270, 178 ),
-						Scale = 1,
+						Position = Vector( 38, -23, 45.5  ),
+						Angles = Angle( 0, 0, 178 ),
+						Scale = 0.8,
 						Phase = 180,
 						BodyGroups = {
 							["shroud"] = 1,
@@ -384,8 +501,7 @@ VEHICLE.Equipment = {
 					},
 				},
 			},
-
-		}
+        }
 	},
     {
 		Category = "Spotlights",
@@ -507,8 +623,8 @@ VEHICLE.Equipment = {
 					},
 					{
 						Model = "models/sentry/props/jp/dashcam.mdl",
-						Position = Vector( 0, -67, 62.7 ),
-						Angles = Angle( 8, 90, 0 ),
+						Position = Vector( 0, -73.2, 51 ),
+						Angles = Angle( 0, 90, 180 ),
 						Scale = 1,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},

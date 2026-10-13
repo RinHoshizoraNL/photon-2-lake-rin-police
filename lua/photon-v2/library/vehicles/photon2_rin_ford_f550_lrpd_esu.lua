@@ -21,7 +21,7 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
-		Category = "Lightbar",
+		Category = "Front Lightbar",
 		Options = {
 			{
 				Option = "Federal Signal Valor",
@@ -31,6 +31,112 @@ VEHICLE.Equipment = {
 						Position = Vector( 0, 35, 95.6 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 1.04,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {
+									NO_DVI_F = "ON",
+									NO_DVI_R = "ON",
+								}
+							}
+						}
+					},
+				}
+			}
+		}
+	},
+	{
+		Category = "Rear Lightbar",
+		Options = {
+			{
+				Option = "Whelen Freedom Mini",
+				Components = {
+					{
+						Component = "photon_whelen_freedommini_lrpd",
+						Position = Vector( 0, -155.5, 109.4 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1,
+						Inputs = {
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
+					},
+				}
+			}
+		}
+	},
+	{
+		Category = "Left Lights",
+		Options = {
+			{
+				Option = "Whelen 900 LED",
+				Components = {
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( -55.5, -42.5, 94 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1,
+					},
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( -55.5, -144, 94 ),
+						Angles = Angle( 0, 90, 0 ),
+						Scale = 1,
+						Phase = 180,
+					},
+				}
+			}
+		}
+	},
+	{
+		Category = "Right Lights",
+		Options = {
+			{
+				Option = "Whelen 900 LED",
+				Components = {
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( 55.5, -42.5, 94 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = 1,
+						Phase = 180,
+					},
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( 55.5, -144, 94 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = 1,
+					},
+				}
+			}
+		}
+	},
+	{
+		Category = "Rear Lights",
+		Options = {
+			{
+				Option = "Whelen 900 LED",
+				Components = {
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( -39, -167.5, 80 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1,
+					},
+					{
+						Component = "creeper_whelen_900_led_lrpd",
+						Position = Vector( 39, -167.5, 80 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1,
+						Phase = 180,
+					},
+					{
+						Name = "Federal Signal MB1",
+						Component = "photon_fedsig_mb1",
+						Position = Vector( 0, -169, 97 ),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 1,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			}
@@ -139,6 +245,11 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 					{
 						Component = "oss_laf150_lrpd",
@@ -154,159 +265,115 @@ VEHICLE.Equipment = {
 							[1] = "schmal/photon/fedsig_legend/dome_r",
 							[2] = "schmal/photon/fedsig_legend/dome_r"
 						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+							},
+						}
 					},
 				}
 			},
 		}
 	},
 	{
-		Category = "Left Lights",
+		Category = "Left Scene Lights",
 		Options = {
 			{
-				Option = "Left Lights",
+				Option = "Left Scene Lights",
 				Components = {
 					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( -57.2, -42, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 90, 0 ),
+						Component = "samm_illum_bar",
+						Position = Vector( -56.75, -42, 100 ),
+						Angles = Angle( 0, 90, -10 ),
 						Scale = 1,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Inputs = {
+							["Emergency.SceneRight"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
 					},
 					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( -57.2, -144, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 90, 0 ),
+						Component = "samm_illum_bar",
+						Position = Vector( -56.75, -92, 100 ),
+						Angles = Angle( 0, 90, -10 ),
 						Scale = 1,
-						Phase = 180,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Inputs = {
+							["Emergency.SceneRight"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
+					},
+					{
+						Component = "samm_illum_bar",
+						Position = Vector( -56.75, -143, 100 ),
+						Angles = Angle( 0, 90, -10 ),
+						Scale = 1,
+						Inputs = {
+							["Emergency.SceneRight"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
 					},
 				}
 			},
 		}
 	},
 	{
-		Category = "Right Lights",
+		Category = "Right Scene Lights",
 		Options = {
 			{
-				Option = "Right Lights",
+				Option = "Right Scene Lights",
 				Components = {
 					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( 57.2, -42, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 270, 0 ),
+						Component = "samm_illum_bar",
+						Position = Vector( 56.75, -42, 100 ),
+						Angles = Angle( 0, -90, -10 ),
 						Scale = 1,
-						Phase = 180,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Inputs = {
+							["Emergency.SceneLeft"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
 					},
 					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( 57.2, -144, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 270, 0 ),
+						Component = "samm_illum_bar",
+						Position = Vector( 56.75, -92, 100 ),
+						Angles = Angle( 0, -90, -10 ),
 						Scale = 1,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-				}
-			},
-		}
-	},
-	{
-		Category = "Rear Lights",
-		Options = {
-			{
-				Option = "Rear Lights",
-				Components = {
-					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( -40, -169.1, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
+						Inputs = {
+							["Emergency.SceneLeft"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
 					},
 					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( 40, -169.1, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 180, 0 ),
+						Component = "samm_illum_bar",
+						Position = Vector( 56.75, -143, 100 ),
+						Angles = Angle( 0, -90, -10 ),
 						Scale = 1,
-						Phase = 180,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( -31, -169.1, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-						Phase = 180,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Component = "oss_laf150_lrpd",
-						Position = Vector( 31, -169.1, 95 ),
-						BodyGroups = {
-							["bracket"] = 1,
-							["mount"] = 0,
-						},
-						Angles = Angle( 0, 180, 0 ),
-						Scale = 1,
-						SubMaterials = {
-							[1] = "schmal/photon/fedsig_legend/dome_r",
-							[2] = "schmal/photon/fedsig_legend/dome_r"
-						},
-					},
-					{
-						Name = "Federal Signal MB1",
-						Component = "photon_fedsig_mb1",
-						Position = Vector( 0, -170, 93 ),
-						Angles = Angle( 0, 0, 0 ),
-						Scale = 1.1,
+						Inputs = {
+							["Emergency.SceneLeft"] = {
+								["ON"] = {}
+							},
+							["Emergency.SceneForward"] = {
+								["ON"] = {}
+							},
+						}
 					},
 				}
 			},
@@ -373,6 +440,7 @@ VEHICLE.Equipment = {
 						Position = Vector( 0.3, 155, 28),
 						Angles = Angle( 0, 270, 0 ),
 						Scale = Vector( 0.8, 0.97, 0.9),
+						Color = Color(0, 0, 0),
 					},
 					{
 						Model = "models/xenosprops/na_plate/na_plate_gov.mdl",

@@ -44,11 +44,18 @@ VEHICLE.Equipment = {
 				Components = {
 					{
 						Component = "photon_fedsig_legend_lrpd",
-						Position = Vector( 0, -12.5, 79.5 ),
+						Position = Vector( 0, -12.5, 78 ),
 						Angles = Angle( 1.5, 90, 0 ),
-						Scale = 0.88,
+						Scale = 0.95,
 						SubMaterials = {
 						[6] = "schmal/photon/fedsig_legend/dome_r"
+						},
+						BodyGroups = {
+							["feet"] = 1,
+						},
+						Bones = {
+							["foot_left"] =	{ Vector( 1.3, 0, 0 ), Angle( 0, 0, 0 ), 1 },
+							["foot_right"] =	{ Vector( -1.3, 0, 0 ), Angle( 0, 0, 0 ), 1 },
 						},
 					},
 				}
