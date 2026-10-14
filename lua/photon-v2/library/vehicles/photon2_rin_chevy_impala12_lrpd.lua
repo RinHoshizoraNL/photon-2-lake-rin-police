@@ -28,6 +28,12 @@ VEHICLE.Equipment = {
 					{ Id = 19, Material = "rin/lrpd2/impala12/patrol" }
 				}
 			},
+			{
+				Option = "K-9 Unit Ruby",
+				SubMaterials = {
+					{ Id = 19, Material = "rin/lrpd2/impala12/k9" }
+				}
+			},
             {
 				Option = "Supervisor",
 				SubMaterials = {

@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+	$basetexture "rin/lrpd2/impala05/seats"
+"$bumpmap" "models\ctvehicles\chevrolet\impala_2000\seats_n"
+    "$nodecal" "1"
+    "$halflambert" 1
+    "$phong" "1" 
+    "$phongboost" ".13" 
+    "$phongfresnelranges" "[1 1 1]" 
+    "$phongexponent" 4.2
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.0045 0.0045 0.0045]"
+    "$rimlight" "1"
+    "$rimlightexponent" "1.85"
+    "$rimlightboost" "1"
+    "$rimmask" "1"
+    "$colorfix" "{255 255 255}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

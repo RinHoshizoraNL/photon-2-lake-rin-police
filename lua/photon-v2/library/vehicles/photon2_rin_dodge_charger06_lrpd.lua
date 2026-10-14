@@ -58,6 +58,112 @@ VEHICLE.Equipment = {
 							["strap_right"] =	{ Vector( 0.7, 0, 0 ), Angle( 26, 0, -1 ), 1 },
 						},
 					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( -12, -82, 54  ),
+						Angles = Angle( 0, 270, 181 ),
+						Scale = 1,
+						Phase = 180,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_xstream_single_lrpd",
+						Position = Vector( 12, -82, 54  ),
+						Angles = Angle( 0, 270, 179 ),
+						Scale = 1,
+						BodyGroups = {
+							["shroud"] = 1,
+							["mount"] = 1,
+						},
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				}
+			},
+			{
+				Option = "Whelen Liberty",
+				Components = {
+					{
+						Component = "photon_whe_liberty_48_lrpd",
+						Position = Vector( 0, -11, 70.5 ),
+						Angles = Angle( 0.5, 90, 0 ),
+						Scale = 0.85,
+						Bones = {
+							["foot_l"] =	{ Vector( -1, 0, -0.2 ), Angle( 0, 0, 0 ), 1 },
+							["foot_r"] =	{ Vector( 1, 0, -0.2 ), Angle( 0, 0, 0 ), 1 },
+							["strap_l"] =	{ Vector( 1.65, 0, -1 ), Angle( 0, 0, 0 ), 1 },
+							["strap_r"] =	{ Vector( -1.65, 0, -1 ), Angle( 0, 0, 0 ), 1 },
+						}
+					},
+					{
+						Component = "photon_fedsig_cuda_lrpd",
+						Position = Vector( -15, -69, 57.3  ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1.2,
+						Phase = 180,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_fedsig_cuda_lrpd",
+						Position = Vector( 15, -69, 57.3  ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1.2,
+						Inputs = {
+							["Emergency.Warning"] = {
+								["MODE1"] = {Light = "SLOW"},
+								["MODE2"] = {Light = "SINGLE"},
+								["MODE3"] = {Light = "QUAD"},
+							},
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_whe_500_lrpd",
+						Position = Vector( 0, -70, 54 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = 0.9,
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				},
+				Props = {
+					{
+						Model = "models/schmal/antenna_gps.mdl",
+						Position = Vector( -18.7, -71, 47.5),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = Vector( 1, 1, 2),
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Model = "models/schmal/antenna_gps.mdl",
+						Position = Vector( 18.7, -71, 47.5),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = Vector( 1, 1, 2),
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
 				}
 			},
 		}
@@ -191,53 +297,6 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
-		Category = "Interior Lighting",
-		Options = {
-            {
-				Option = "Rear Deck",
-				Components = {
-					{
-						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( -12, -82, 54  ),
-						Angles = Angle( 0, 270, 181 ),
-						Scale = 1,
-						Phase = 180,
-						BodyGroups = {
-							["shroud"] = 1,
-							["mount"] = 1,
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {Light = "SLOW"},
-								["MODE2"] = {Light = "SINGLE"},
-								["MODE3"] = {Light = "QUAD"},
-							},
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-					},
-					{
-						Component = "photon_fedsig_xstream_single_lrpd",
-						Position = Vector( 12, -82, 54  ),
-						Angles = Angle( 0, 270, 179 ),
-						Scale = 1,
-						BodyGroups = {
-							["shroud"] = 1,
-							["mount"] = 1,
-						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE1"] = {Light = "SLOW"},
-								["MODE2"] = {Light = "SINGLE"},
-								["MODE3"] = {Light = "QUAD"},
-							},
-						},
-						RenderGroup = RENDERGROUP_OPAQUE,
-					},
-				},
-			},
-        }
-	},
-    {
 		Category = "Wheels",
 		Options = {
 			{

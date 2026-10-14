@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+    "$basetexturetransform" "center .5 .5 scale 25 25 rotate 0 translate 0 0"
+    "$basetexture" "rin/lrpd2/impala05/leather02_lightbeige3"
+    "$bumpmap" "models/ctvehicles/shared/leather/leather02_normals"
+	"$nodecal" "1"
+	"$halflambert" 1
+	"$phong" "1" 
+	"$phongboost" "0.07" 
+	"$phongfresnelranges" "[0.51 0.21 2]" 
+	"$phongexponent" 2.45
+	"$rimlight" "1"
+	"$rimlightexponent" "10"
+	"$rimlightboost" "0.11"
+	"$rimmask" "1"
+    "$colorfix" "{155 155 155}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}
