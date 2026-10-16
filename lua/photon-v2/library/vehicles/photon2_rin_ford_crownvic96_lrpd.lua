@@ -48,7 +48,7 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 6, Material = "rin/lrpd2/crownvic96/traffic" }
 				},
@@ -99,7 +99,7 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Special Operations",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 6, Material = "rin/lrpd2/crownvic96/special_ops" }
 				},
@@ -127,7 +127,7 @@ VEHICLE.Equipment = {
                         Component = "patlite_axs12",
                         Position = Vector( 0, -17, 70.25 ),
                         Angles = Angle( -1, -90, 0 ),
-                        Scale = 1.2,
+                        Scale = 1.25,
 						States = {
 							[1] = "B",
 							[2] = "B",
@@ -136,7 +136,7 @@ VEHICLE.Equipment = {
 						},
                         Options = {
                             FeetWidthOffset = 1,
-                            FeetTilt = -4,
+                            FeetTilt = -4.5,
                         },
 						SubMaterials = {
 							[12] = "sentry/props/glass/blue"
@@ -149,9 +149,9 @@ VEHICLE.Equipment = {
 				Components = {
 					{
                         Component = "patlite_ajs12",
-                        Position = Vector( 0, -19, 73.5 ),
+                        Position = Vector( 0, -19, 73.6 ),
                         Angles = Angle( -1, -90, 0 ),
-                        Scale = 1.1,
+                        Scale = 1.15,
 						States = {
 							[1] = "B",
 							[2] = "B",
@@ -160,7 +160,7 @@ VEHICLE.Equipment = {
 						},
                         Options = {
                             FeetWidthOffset = 4,
-                            FeetTilt = -4,
+                            FeetTilt = -4.5,
                         },
 						SubMaterials = {
 							[2] = "sentry/props/koitoflasher/glass_blue",

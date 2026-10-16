@@ -13,7 +13,7 @@ VEHICLE.Equipment = {
 		Category = "Livery",
 		Options = {
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/crownvic98/traffic_slick" }
 				},
@@ -265,8 +265,8 @@ VEHICLE.Equipment = {
 						Name = "@siren_speaker",
 						Component = "siren_prototype",
 						Model = "models/sentry/props/jp/patlitespeaker.mdl",
-						Position = Vector( 3.5, 119.8, 28.4 ),
-						Angles = Angle( 0, 270, 0 ),
+						Position = Vector( 11.5, 121.4, 22.5 ),
+						Angles = Angle( 0, 270, 180 ),
 						Scale = 1,
 						SubMaterials = {
 							[0] = "sentry/cvpi_hd/black"
@@ -286,8 +286,8 @@ VEHICLE.Equipment = {
 					},
 					{
 						Inherit = "@siren_speaker",
-						Position = Vector( -3.5, 119.8, 28.4 ),
-						Angles = Angle( 0, 270, 0 ),
+						Position = Vector( -11.5, 121.4, 22.5 ),
+						Angles = Angle( 0, 270, 180 ),
 						Inputs = {
 							["Emergency.Siren"] = {
                         		["T1"] = {},
@@ -321,14 +321,14 @@ VEHICLE.Equipment = {
 					--
 					{
 						Component = "koito_autocover_lrpd",
-						Position = Vector( 11, 118.5, 27.7 ),
+						Position = Vector( 10, 118.5, 27.7 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
 						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
 						Component = "koito_autocover_lrpd",
-						Position = Vector( -11, 118.5, 27.7 ),
+						Position = Vector( -10, 118.5, 27.7 ),
 						Angles = Angle( 0, 90, 0 ),
 						Scale = 0.9,
 						Phase = 180,

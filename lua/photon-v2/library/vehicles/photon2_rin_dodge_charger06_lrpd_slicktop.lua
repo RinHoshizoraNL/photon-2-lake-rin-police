@@ -13,7 +13,7 @@ VEHICLE.Equipment = {
 		Category = "Livery",
 		Options = {
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/charger06/traffic_slick" }
 				},

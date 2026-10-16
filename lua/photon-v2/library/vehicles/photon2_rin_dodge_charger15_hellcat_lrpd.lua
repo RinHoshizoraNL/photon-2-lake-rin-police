@@ -13,7 +13,7 @@ VEHICLE.Equipment = {
 		Category = "Livery",
 		Options = {
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/hellkitty/traffic" }
 				},

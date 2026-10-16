@@ -47,9 +47,9 @@ VEHICLE.Equipment = {
 				Components = {
 					{
                         Component = "patlite_ajs12",
-                        Position = Vector( 0, -19, 65.7 ),
+                        Position = Vector( 0, -19, 65.8 ),
                         Angles = Angle( -1, -90, 0 ),
-                        Scale = 1.1,
+                        Scale = 1.15,
 						States = {
 							[1] = "B",
 							[2] = "B",
@@ -58,7 +58,7 @@ VEHICLE.Equipment = {
 						},
                         Options = {
                             FeetWidthOffset = 4,
-                            FeetTilt = -4,
+                            FeetTilt = -5,
                         },
 						SubMaterials = {
 							[2] = "sentry/props/koitoflasher/glass_blue",
@@ -66,8 +66,7 @@ VEHICLE.Equipment = {
                     },
 				}
 			},
-
-		}
+        }
 	},
 	{
 		Category = "Flashers",

@@ -45,7 +45,7 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 13, Material = "rin/lrpd2/caprice13/traffic_slick" }
 				},

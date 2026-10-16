@@ -32,7 +32,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/traffic_slick" }
 				},
@@ -50,7 +50,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Special Operations",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/special_ops" }
 				},

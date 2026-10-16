@@ -31,7 +31,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/traffic" }
 				},
@@ -49,7 +49,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Traffic Enforcement (Seatbelt Campaign)",
+				Option = "Expressway Patrol (Seatbelt Campaign)",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/traffic_seatbelt" }
 				},
@@ -85,7 +85,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Special Operations",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 4, Material = "rin/lrpd2/charger15/special_ops" }
 				},

@@ -121,7 +121,7 @@ VEHICLE.Equipment = {
 				}
 			},
             {
-				Option = "Special Operations",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 15, Material = "rin/lrpd2/explorer16/special_ops" }
 				},

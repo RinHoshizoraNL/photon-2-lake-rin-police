@@ -31,6 +31,40 @@ VEHICLE.Equipment = {
 					},
 				},
 			},
+			{
+				Option = "Expressway Patrol",
+				SubMaterials = {
+					{ Id = 23, Material = "rin/lrpd2/charger12/traffic" }
+				},
+				Props = {
+				    {
+						Model = "models/schmal/chevcap13_pushbar.mdl",
+						Position = Vector( 0, 127, 26 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = Vector( 1, 1.1, 1.1 ),
+						BodyGroups = {
+							["wrap"] = 1,
+						},
+					},
+				},
+			},
+			{
+				Option = "Supervisor",
+				SubMaterials = {
+					{ Id = 23, Material = "rin/lrpd2/charger12/supervisor" }
+				},
+				Props = {
+				    {
+						Model = "models/schmal/chevcap13_pushbar.mdl",
+						Position = Vector( 0, 127, 26 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = Vector( 1, 1.1, 1.1 ),
+						BodyGroups = {
+							["wrap"] = 0,
+						},
+					},
+				},
+			},
 		}
 	},
 	{

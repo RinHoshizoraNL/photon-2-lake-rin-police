@@ -20,7 +20,7 @@ VEHICLE.Equipment = {
 				},
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/charger06/traffic" }
 				},

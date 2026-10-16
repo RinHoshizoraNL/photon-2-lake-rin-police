@@ -50,7 +50,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Traffic Enforcement",
+				Option = "Expressway Patrol",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/crownvic10/traffic" }
 				},
@@ -98,7 +98,7 @@ VEHICLE.Equipment = {
 				}
 			},
 			{
-				Option = "Special Operations",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 3, Material = "rin/lrpd2/crownvic10/special_ops" }
 				},

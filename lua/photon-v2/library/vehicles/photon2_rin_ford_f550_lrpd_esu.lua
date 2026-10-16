@@ -1,7 +1,7 @@
 if (Photon2.ReloadVehicleFile()) then return end
 local VEHICLE = Photon2.LibraryVehicle()
 
-VEHICLE.Title 		= "2014 Ford F550 LRPD ESU"
+VEHICLE.Title 		= "2014 Ford F550 LRPD SOD"
 VEHICLE.Vehicle		= "f550_rescue_sm"
 VEHICLE.Category 	= "Photon 2: Lake Rin Police Dept."
 VEHICLE.Author		= "Rin Hoshizora"
@@ -13,7 +13,7 @@ VEHICLE.Equipment = {
 		Category = "Livery",
 		Options = {
 			{
-				Option = "Rescue",
+				Option = "Special Operations Division",
 				SubMaterials = {
 					{ Id = 2, Material = "rin/lrpd2/f550/esu" }
 				},
